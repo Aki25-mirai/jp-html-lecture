@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Form</title>
+</head>
+<body>
+<form method="" action="">
+	<label for="inputName">Name:</label>
+	<input type="text" name="name" id="inputName" pattern="[a-zA-Z]{8}"
+	required>
+	<br><br>
+	<label for="inputEmail">Email:</label>
+	<input type="email" name="email" id="inputEmail">
+	<br><br>
+	<label for="inputAge">Age:</label>
+	<input type="number" name="age" value="19" id="inputAge" max="110" step="5">
+	<br><br>
+	<input type="hidden" name="oldvalue" value="mgmg"><br>
+	<label for="inputAddress">Address:</label>
+	<textarea id="inputAddress" name="address" rows="5"></textarea>
+	<br><br>
+	<label>Gender:</label>
+	<input type="radio" name="gender" value="male" id="inputMale" checked><label for="inputMale">Male</label>
+	<input type="radio" name="gender" value="female" id="inputFemale">
+	<label for="inputFemale">Female</label>
+	<br>
+	<label>Hobbies</label>
+	<input type="checkbox" name="hobbies[]" id="inputReading" value="reading">
+	<label for="inputReading">Reading</label>
+	<input type="checkbox" name="hobbies[]" id="inputSwimming" value="swimming">
+	<label for="inputSwimming">Swimming</label>
+	<input type="checkbox" name="hobbies[]" id="inputPlanting" value="planting">
+	<label for="inputPlanting">Planting</label>
+	<input type="checkbox" name="hobbies[]" id="inputDrawing" value="drawing">
+	<label for="inputDrawing">Drawing</label>
+	<br>
+	<label for="inputYear">Acamedic Year:</label>
+	<select name="acamedic" id="inputYear">
+		<optgroup label="Choose Acamedic Year">
+		<option value="1">First Year</option>
+		<option value="2">Second Year</option>
+		<option value="3">Third Year</option>
+	</optgroup>
+	</select>
+	<br>
+	<br>
+<label for="inputProfile">Profile:</label>
+<input type="file" name="profile[]" id="inputProfile" multiple 
+accept="image/*">
+<br><br>
+<input type="submit" name="btnsubmit"  value="Submit">	
+<input type="reset" name="btncancel" value="Cancel">
+</form>
+</body>
+</html>
