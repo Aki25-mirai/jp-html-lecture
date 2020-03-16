@@ -1,0 +1,117 @@
+var _cartstack = _cartstack || [];
+_cartstack.push(['setSiteID', 'k5NWXVhK']); /* required */
+
+var cartstack_cartPageURL = '/checkout/cart/';
+var cartstack_checkoutPageURLs = ['/onestepcheckout/','',''];
+var cartstack_successPageURL = '/checkout/onepage/success/';
+var cartstack_isconfirmation = 0;
+var cartstack_debug = 0;
+var cartstack_trackVisitor = 0;
+
+var cartstack_pageurl = window.location.href.toLowerCase();
+
+var cartstack_cartitems_cartRow = "table#shopping-cart-table tbody tr";
+var cartstack_cartitems_quantity = "";
+var cartstack_cartitems_productID = "";
+var cartstack_cartitems_productName = "h2.product-name a";
+var cartstack_cartitems_productDesc = "";
+var cartstack_cartitems_productURL = "h2.product-name a|href";
+var cartstack_cartitems_productURLPrefix = '';
+var cartstack_allowEmptyURL = 0;
+var cartstack_cartitems_productImageURL = "td.prod-cart.image img|src";
+var cartstack_cartitems_productImageURLPrefix = 'https:';
+var cartstack_allowEmptyImageURL = 0;
+var cartstack_cartitems_productPrice = "span.cart-price span.price";
+var cartstack_cartitems_productImageWidth = "100";
+var cartstack_debugCartItems = 0;
+var cartstack_cartItems = 0;
+
+var cartstack_cartTotal = '';
+var cartstack_dataItems = [];
+var cartstack_tracking = 0;
+
+if (cartstack_cartPageURL.length > 0 && cartstack_pageurl.indexOf(cartstack_cartPageURL.toLowerCase()) >= 0)
+{
+	_cartstack.push(['setAPI', 'tracking']);
+	cartstack_cartItems = 1;
+	cartstack_cartTotal = "table#shopping-cart-totals-table tfoot span.price";
+	if (cartstack_debug) { console.log('cs: track-cart'); }
+}
+else if (cartstack_successPageURL.length > 0 && cartstack_pageurl.indexOf(cartstack_successPageURL.toLowerCase()) >= 0)
+{
+	_cartstack.push(['setAPI', 'confirmation']);
+	cartstack_isconfirmation = 1;
+	if (cartstack_debug) { console.log('cs: confirmation'); }
+}
+else
+{
+	var cartstack_checkoutURLExists = 0;
+	for (var i=0; i<cartstack_checkoutPageURLs.length; i++)
+	{
+		var cartstack_checkoutPageURL = cartstack_checkoutPageURLs[i].toLowerCase();
+		if (cartstack_checkoutPageURL.length > 0 && cartstack_pageurl.indexOf(cartstack_checkoutPageURL) >= 0)
+		{
+			cartstack_checkoutURLExists = 1;
+		}
+	}
+
+	if (cartstack_checkoutURLExists)
+	{
+		_cartstack.push(['setAPI', 'tracking']);
+		cartstack_tracking = 1;
+		
+		cartstack_cartitems_cartRow = "table.onestepcheckout-summary tbody tr";
+		cartstack_cartitems_quantity = "";
+		cartstack_cartitems_productName = "td.name";
+		cartstack_cartitems_productURL = "";
+		cartstack_cartitems_productImageURL = "";
+		cartstack_allowEmptyURL = 1;
+		cartstack_allowEmptyImageURL = 1;
+		cartstack_cartitems_productPrice = "td.total span.price";
+		
+		if (cartstack_debug) { console.log('cs: track-checkout'); }
+	}
+	else
+	{
+		_cartstack.push(['setAPI', 'capture']);
+		if (cartstack_debug) { console.log('cs: capture'); }
+	}
+}
+
+function cartstack_getTracking() {
+	if (typeof cartstack_updatecart != 'undefined' && typeof cartstack_getCartTotal_RealTime != 'undefined' && typeof cartstack_getCartItems_RealTime != 'undefined')
+	{
+		(function(){
+			var _currentCartTotal = "0.00";
+			
+			cartstack_cartTotal = "table.onestepcheckout-totals tr.grand-total span.price";	
+			
+			setInterval(function(){
+				var _cartTotal = cartstack_getCartTotal_RealTime();
+
+				if (_cartTotal != _currentCartTotal)
+				{
+					var _update = [];
+					_update.push(['setSiteID','k5NWXVhK']);
+					_update.push(['setCartTotal', _cartTotal]);
+					
+					var _items_array = cartstack_getCartItems_RealTime();
+					for(var i=0; i<_items_array.length; i++)
+					{
+						_items_array[i][1].productName = _items_array[i][1].productName.replace(new RegExp("\t", "g"), '').replace(new RegExp("\n", "g"), '');
+						_update.push(_items_array[i]);
+					}
+					
+					cartstack_updatecart(_update);
+
+					_currentCartTotal = _cartTotal;
+				}
+			}, 3000);
+		})();
+	}
+}
+
+//(function(){var y = document.getElementsByTagName('script');var l=1;for(var i=0; i < y.length; i++){if (y[i].src == 'https://api.cartstack.com/js/cartstack_utility.js'){l=0;}}if(l){var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = 'https://api.cartstack.com/js/cartstack_utility.js';var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);}})();
+var cartstack_startPool = 0;
+
+//(function(){function cartstack_load(){var y = document.getElementsByTagName('script');var l=1;for(var i=0; i < y.length; i++){if (y[i].src == 'https://api.cartstack.com/js/cartstack.js'){l=0;}}if(l){var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = 'https://api.cartstack.com/js/cartstack.js';var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);}}if(cartstack_isconfirmation){cartstack_load();}else{if(window.attachEvent){window.attachEvent('onload', cartstack_load);}else{window.addEventListener('load', cartstack_load, false);}}})();

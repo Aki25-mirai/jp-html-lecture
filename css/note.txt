@@ -1,0 +1,7 @@
+selector
+{
+	property:value;
+}
+
+position
+...............

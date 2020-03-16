@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#menu{
+	background-color:#fc7703;
+	padding: 15px;
+	text-align: center;
+}
+#menu ul li a{
+	display: inline;
+}
+#menu ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: ;
+	padding: 0 15px;
+}
+.clear{
+	clear: both;
+}
+#menu ul li a:hover{
+	color:red;
+}
+#sandle{
+	text-align: center;
+	padding: 20px 20px;
+	margin: 20px 100px;
+}
+#sandle_img{
+	width: 50%;
+	float: left;
+}
+#sandle_img img{
+	width: 300px;
+	height: 250px;
+}
+#sandle_desc{
+	width: 50%;
+	float: left;
+}
+#btn{
+	background-color: orange;
+	border: 1px solid red;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 30px;
+}

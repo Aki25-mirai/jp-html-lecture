@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding: 30px;
+	color: black;
+	font-weight: bold;
+}
+
+#menu ul li{
+	display: inline;
+}
+
+#menu ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+#menu ul li a:hover {
+	color: #d89959;
+}
+
+h2{
+	padding: 40px;
+	text-align: center;
+}
+
+
+#ipanema {
+	text-align: center;
+	padding: 20px;
+	font-size: 15px;
+}
+
+#rider{
+	text-align: center;
+	padding: 20px;
+	font-size: 15px;
+
+}
+
+#btn {
+	font-size: 20px;
+	border: 1px solid #d89959;
+	padding: 5px 20px;
+	border-radius: 30px;
+	margin: 10px auto;
+    display: block;
+    background-color: gray;
+    color:#ffffff;
+ 	
+}
+
+
+#footer {
+	clear: both;
+	padding: 15px;
+	background-color:#db3db1;
+	color: white;
+	text-align: center;
+}
+span{
+	color: red;
+}
+

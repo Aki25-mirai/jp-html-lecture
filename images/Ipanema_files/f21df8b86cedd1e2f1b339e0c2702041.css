@@ -1,0 +1,5281 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+|--------------------------------------------------------------------------
+| IMPORT
+|--------------------------------------------------------------------------
+*/
+
+@import url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/reset.css');
+@import url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/fonts.css');
+@import url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/dl-menu.css');
+
+/*
+|--------------------------------------------------------------------------
+| GERAL
+|--------------------------------------------------------------------------
+*/
+
+body, html{
+  float: left;
+  height: 100%;
+  width: 100%;
+  font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+}
+
+body.scroll-lock{
+  overflow: hidden;
+}
+
+.page{
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| LINK HOVER
+|--------------------------------------------------------------------------
+*/
+
+a:hover{
+  color: #C0004E;
+}
+
+/*
+|--------------------------------------------------------------------------
+| INPUTS
+|--------------------------------------------------------------------------
+*/
+
+.input-text,
+textarea{
+  background: #F7F7F7;
+  box-shadow: 0 0 0 1px #CFCFCF inset;
+  border: 0px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  text-indent: 10px;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  font-style: italic;
+  text-transform: lowercase;
+  padding: 8.5px 0 8.4px 0;
+}
+
+.button{
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 19px;
+  line-height: 19px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/inputs/background-submit.png") left top;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: 0px;
+  padding: 14px 10px 13px 10px;
+  cursor: pointer;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.button:hover{
+  background-position: left -48px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| MAIN CONTAINER
+|--------------------------------------------------------------------------
+*/
+
+.main-container{
+  float: left;
+  width: 96%;
+  padding: 0 2%;
+  transition: 0.5s;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  background: #FFF;
+}
+
+.main-container .main{
+  float: none;
+  margin: 0 auto;
+  max-width: 964px;
+  position: relative;
+  width: 100%;
+}
+
+.catalog-category-view .main-container .main{
+  position: initial;
+}
+
+.catalog-category-view .category-title{
+  display: none;
+}
+
+.main-container .main .col-main{
+  float: left;
+  width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CATEGORY PAGE
+|--------------------------------------------------------------------------
+*/
+
+
+body.catalog-category-view #banner-home .bx-controls{
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2 COLUNAS
+|--------------------------------------------------------------------------
+*/
+
+.col2-left-layout,
+.col2-left-layout a{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.col2-left-layout a:hover{
+  color: #C0004E;
+}
+
+.col2-left-layout .main .col-left{
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 143px;
+  width: 25%;
+  border: 2px dotted #CFCFCF;
+  padding: 20px 2%;
+}
+
+.col2-left-layout .main .col-left .block-content,
+.col2-left-layout .main .col-left .block-content ul,
+.col2-left-layout .main .col-left .block-content ul li,
+.col2-left-layout .main .col-left .block-account,
+.col2-left-layout .main .col-left .block-account .block-title,
+.col2-left-layout .main .col-left .block-account .block-title strong,
+.col2-left-layout .main .col-left .block-account .block-title strong span{
+  float: left;
+  width: 100%;
+}
+
+.col2-left-layout .main .col-left .block-account .block-title strong span{
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.col2-left-layout .main .col-left .block-content ul li strong{
+  float: left;
+  width: 100%;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px dotted #CFCFCF;
+  font-style: italic;
+}
+
+.col2-left-layout .main .col-left .block-content ul li a,
+.col2-left-layout .main .col-left .block-content ul li strong{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.col2-left-layout .main .col-left .block-content ul li strong{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-style: normal;
+}
+
+.col2-left-layout .main .col-left .block-cart-custom,
+.col2-left-layout .main .col-left .block-reorder{
+  display:none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| MENSAGENS
+|--------------------------------------------------------------------------
+*/
+
+.onestepcheckout-error,
+.messages{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-error,
+.messages li{
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.messages li ul{
+  float: left;
+  width: 100%;
+}
+
+.messages li ul li{
+  margin: 0;
+  padding: 0;
+}
+
+.notice-msg{
+  padding: 15px 0;
+  text-indent: 15px;
+  background: #FCF8E3;
+  border: 1px solid #FAEBCC;
+  color: #8A6D3B;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.success-msg{
+  padding: 15px 0;
+  text-indent: 15px;
+  background: #DFF0D8;
+  border: 1px solid #D6E9C6;
+  color: #3C763D;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.onestepcheckout-error,
+.error-msg{
+  padding: 15px 0 !important;
+  text-indent: 15px;
+  background: #F2DEDE !important;
+  border: 1px solid #EBCCD1 !important;
+  color: #A94442 !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HEADER RESPONSIVO
+|--------------------------------------------------------------------------
+*/
+
+.header-responsivo{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: #F7F7F7;
+  transition: 0.5s;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  z-index: 1003;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.header-responsivo .abre-menu{
+  float: right;
+  font-size: 22px;
+  line-height: 22px;
+  color: #FFF;
+  background: #CFCFCF;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-family: "YanoneKaffeesatzRegular";
+  text-transform: uppercase;
+}
+
+.header-responsivo .logo{
+  float: left;
+  width: 100px;
+  height: 20px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/logo.png") top center no-repeat;
+  background-size: 100px 20px;
+  margin: 10px 0 10px 20px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| MENU RESPONSIVO
+|--------------------------------------------------------------------------
+*/
+
+.menu-responsivo{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  background: #F7F7F7;
+  z-index: 999;
+  transition: 0.5s;
+  border-left: 1px solid #CFCFCF;
+}
+
+.menu-responsivo ul{
+  float: left;
+  margin: 15px 0 0 0;
+}
+
+.menu-responsivo ul li{
+  float: left;
+  width: 259px;
+  position: relative;
+}
+
+.menu-responsivo ul li a{
+  float: left;
+  width: 211px;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 7px 16px 7px 32px;
+  color: #000;
+}
+
+.menu-responsivo ul li i{
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 8px;
+  height: 11px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/seta-menu-responsivo.svg") right center no-repeat;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.menu-responsivo ul li.aberto i{
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -o-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.menu-responsivo ul li a:hover{
+  color: #c0004e;
+}
+
+.menu-responsivo ul li ul{
+  display: none;
+  margin: 0 0 18px 0;
+}
+
+.menu-responsivo ul li ul li a{
+  width: 195px;
+  padding: 7px 16px 7px 48px;
+  text-transform: none;
+  background: none;
+}
+
+.menu-responsivo ul.logos{
+  margin-top: 0;
+}
+
+.menu-responsivo ul.logos li{
+  margin: 10px 0;
+}
+
+.menu-responsivo ul.logos li a{
+  padding: 0 16px 0 32px;
+}
+
+.menu-responsivo ul.logos li a img{
+  width: 80px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HEADER
+|--------------------------------------------------------------------------
+*/
+
+#header{
+  float: left;
+  width: 96%;
+  padding: 0 2%;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/fundo.png") center top no-repeat #FFF;
+  left: 0;
+  transition-duration: 0.5s;
+}
+
+#header #header-conteudo{
+  position: relative;
+  width: 100%;
+  height: 113px;
+  margin: 0 auto 7px auto;
+}
+
+#header .logos{
+  float: left;
+  width: 294px;
+  margin: 10px 0 0 0;
+}
+
+#header .logos .ipanema{
+  float: left;
+  width: 260px;
+  height: 67px;
+  margin-top: 20px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/logo.png") top center no-repeat;
+}
+
+#header .logos .mercedes{
+  float: left;
+  clear: both;
+  width: 294px;
+  height: 33px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/logo-mercedes.png") top center no-repeat;
+  background-size: 294px 33px;
+  display: none;
+}
+
+#header #header-conteudo .direita{
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+#header #header-conteudo .direita .menu-shop{
+  float: right;
+}
+
+#header #header-conteudo .direita .menu-shop ul.links{
+  float: left;
+}
+
+#header #header-conteudo .direita .menu-shop ul.links li{
+  float: left;
+  margin: 0 10px;
+  padding: 11px 0 7px 0;
+}
+
+#header #header-conteudo .direita .menu-shop ul.links li a{
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #c0004e;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais{
+  float: left;
+  margin: 8px -10px 0 0;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul{
+  float: left;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li{
+  float: left;
+  margin: 0 10px;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li a{
+  float: left;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li a.facebook{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/ico_facebook.svg") top left no-repeat;
+  width: 12px;
+  height: 19px;
+  background-size: 12px 19px;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li a.twitter{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/ico_twitter.svg") top left no-repeat;
+  width: 21px;
+  height: 16px;
+  background-size: 21px 16px;
+  margin: 2px 0 0 0;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li a.instagram{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/ico_instagram.svg") top left no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+
+#header #header-conteudo .direita .menu-shop .redes-sociais ul li a.pintrest{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/ico_pinterest.png") top left no-repeat;
+  width: 19px;
+  height: 19px;
+  background-size: 19px 19px;
+}
+
+#header #header-conteudo .direita .menu-shop .carrinho{
+  float: left;
+  width: 23px;
+  height: 31px;
+  margin: 0 0 0 20px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/cesta.png") top left no-repeat;
+  position: relative;
+}
+
+#header #header-conteudo .direita .menu-shop .carrinho .quantidade{
+  float: right;
+  width: 90%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+
+}
+
+#header #header-conteudo .direita .menu-shop .carrinho .quantidade span{
+  float: left;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "YanoneKaffeesatzBold";
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFF;
+  margin: 2px 0 0 0;
+}
+
+#header #header-conteudo .direita .menu-site{
+  float: left;
+  clear: both;
+  padding: 8px 0 7px 0;
+  margin: 15px 0 0 0;
+}
+
+#header #header-conteudo .direita .menu-site li{
+  float: left;
+  margin: 0 15px;
+  position: relative;
+  z-index: 1000;
+}
+
+#header #header-conteudo .direita .menu-site li.shop{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/seta-menu-shop.png") center right no-repeat;
+  padding-right: 15px;
+}
+
+#header #header-conteudo .direita .menu-site li a{
+  float: left;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#header #header-conteudo .direita .menu-site ul li ul{
+  position: absolute;
+  width: 155px;
+  left: -14px;
+  top: 20px;
+  padding-top: 12px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/seta-sub-menu-shop.png") left top no-repeat;
+  display: none;
+}
+
+#header #header-conteudo .direita .menu-site ul li:hover ul{
+  display: block;
+}
+
+#header #header-conteudo .direita .menu-site ul li ul li{
+  margin: 0;
+  width: 125px;
+  padding: 0 15px;
+  background: #F7F7F7;
+}
+
+#header #header-conteudo .direita .menu-site ul li ul li a{
+  float: left;
+  width: 100%;
+  border-top: 1px solid #CFCFCF;
+  color: #C0004E;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 8px 0 8px 0;
+}
+
+#header #header-conteudo .direita .menu-site ul li ul li:first-child a{
+  border-top: 0px;
+}
+
+#header #header-conteudo .direita .busca{
+  float: left;
+  margin: 16px 0 0 10px;
+}
+
+#header #header-conteudo .direita .busca .input-text{
+  float: left;
+  width: 140px;
+  background: none repeat scroll 0 0 #F7F7F7;
+  border: 0 none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #CFCFCF inset;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-style: italic;
+  line-height: 13px;
+  padding: 9px 55px 9px 0;
+  text-indent: 10px;
+  text-transform: lowercase;
+  height: auto;
+  margin: 0;
+}
+
+#header #header-conteudo .direita .busca .input-text::-webkit-input-placeholder{
+  color: #000;
+  opacity: 1 !important;
+}
+
+#header #header-conteudo .direita .busca .input-submit{
+  float: left;
+  margin: -1px 0 0 -42px;
+  padding: 4px 10px;
+  font-size: 0px;
+  line-height: 0px;
+  width: 41px;
+  height: 33px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/header/lupa.png") center no-repeat;
+  border: 0 none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#header #header-conteudo .direita .busca-banner{
+  float: left;
+}
+
+#header #header-conteudo .direita #banner-frete-gratis{
+  float: left;
+  margin: 17.5px 0 0 10px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+
+#footer{
+  float: left;
+  width: 96%;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/footer/fundo.png") center bottom no-repeat #FFF;
+  margin: 0;
+  padding: 0 2% 40px 2%;
+  z-index: 1000;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+#footer #footer-conteudo{
+  position: relative;
+  width: 100%;
+  margin: 10px auto 0 auto;
+  padding-top: 50px;
+}
+
+.footer-home{
+  border: 0px !important;
+}
+
+#footer #footer-conteudo .esquerda{
+  float: left;
+}
+
+#footer #footer-conteudo .esquerda .menu{
+  float: left;
+  margin: 30px 0 0 0;
+  clear: both;
+}
+
+#footer #footer-conteudo .esquerda .menu li{
+  float: left;
+}
+
+#footer #footer-conteudo .esquerda .menu li a{
+  float: left;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0 25px 0 0;
+}
+
+#footer #footer-conteudo .esquerda .newsletter{
+  float: left;
+  position: relative;
+  margin: 11px 50px -5px 0;
+}
+
+#footer #footer-conteudo .esquerda .newsletter p{
+  float: left;
+  font-style: italic;
+  line-height: 15px;
+  padding: 6px 0 0 0;
+  color: #000000;
+  font-family: 'Arial';
+  font-size: 13px;
+}
+
+#footer #footer-conteudo .esquerda .newsletter form{
+  float: left;
+  position: relative;
+  margin: 0 0 0 15px;
+}
+
+#footer #footer-conteudo .esquerda .newsletter .input-text{
+  float: left;
+  width: 225px;
+  background: none repeat scroll 0 0 #F7F7F7;
+  border: 0 none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #CFCFCF inset;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-style: italic;
+  line-height: 13px;
+  padding: 10px 22px 10px 0;
+  text-indent: 10px;
+  text-transform: lowercase;
+  height: auto;
+  margin: 0px;
+}
+
+#footer #footer-conteudo .esquerda .newsletter .input-submit{
+  float: left;
+  padding: 4px 10px;
+  margin: 2px 0 0 -42px;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 0 none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-family: "YanoneKaffeesatzBold";
+  font-size: 18px;
+  line-height: 18px;
+  padding: 4px 10px 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+
+  #footer #footer-conteudo .esquerda .newsletter .input-submit{
+    padding: 6px 13px 7px 13px;
+    margin: 1px 0 0 -42px;
+  }
+
+}
+
+#footer #footer-conteudo .esquerda .newsletter .message,
+#footer #footer-conteudo .esquerda .newsletter label.error{
+  position: absolute;
+  left: 0;
+  top: 32px;
+  font-family: "YanoneKaffeesatzBold";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #C0004E;
+}
+
+#footer #footer-conteudo .esquerda .newsletter label.error{
+  position: absolute;
+  left: 0;
+  top: 33px;
+}
+
+#footer #footer-conteudo .direita{
+  float: right;
+  margin: 19px 0 0 0;
+}
+
+#footer #footer-conteudo .direita .logo{
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+  text-align: center;
+  width: 200px;
+  padding-top: 40px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/footer/logo.png") right top no-repeat;
+  margin: -25px 0 0 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HOME
+|--------------------------------------------------------------------------
+*/
+
+#banner-home{
+  float: left;
+  width: 100%;
+  height: 398px;
+  padding: 0 0 65px;
+  position: relative;
+  left: 0;
+  transition-duration: 0.5s;
+  background: #FFF;
+}
+
+#banner-home ul li,
+#banner-home ul li a{
+  float: left;
+  width: 100%;
+  height: 398px;
+  overflow: hidden;
+}
+
+#banner-home ul li{
+  background-position: center;
+}
+
+#banner-home .bx-wrapper{
+  position: relative;;
+}
+
+#banner-home .bx-wrapper .bx-controls{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-pager{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: -27px 0 0 0;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-pager .bx-pager-item{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  border: 1px solid transparent;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-pager .bx-pager-item a.active{
+  border: 1px solid white;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-pager .bx-pager-item a:after{
+  content: "";
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: white;
+  margin: 2px;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-controls-direction{
+  margin:  0 auto;
+  width: 1200px;
+  max-width: 100%;
+  position: relative;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-controls-direction .bx-prev,
+#banner-home .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+  position: absolute;
+  width: 21px;
+  height: 41px;
+  font-size: 0px;
+  line-height: 0px;
+  top: 178.5px;
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
+  left: 0;
+  background-image: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/banner-home-arrow-left.png");
+}
+
+#banner-home .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+  right: 0;
+  background-image: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/banner-home-arrow-right.png");
+}
+
+#banner-home .imagem{
+  float: left;
+  width: 100%;
+  height: 398px;
+  background-position: center;
+  background-image: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/banner.png");
+}
+
+#banner-home .hidden{
+  display: none;
+}
+
+.catalog-category-view #banner-home ul li,
+.catalog-category-view #banner-home ul li a{
+  height: 270px;
+}
+
+.cms-home .col-main .category-home-title,
+.cms-universalteam .col-main .category-home-title{
+  float: left;
+  width: 100%;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  color: #000000;
+}
+
+.cms-home .col-main .category-products,
+.cms-universalteam .col-main .category-products{
+  float: left;
+  width: calc(100% - 354px);
+  margin-top: 65px;
+}
+
+.cms-home .col-main .std .category-products,
+.cms-universalteam .col-main .std .category-products{
+  width: 100%;
+  margin-top: 0;
+}
+
+.hidden{
+  visibility: hidden;
+}
+/*
+|--------------------------------------------------------------------------
+| PRODUTOS GRID
+|--------------------------------------------------------------------------
+*/
+
+.products-grid{
+  float: left;
+  width: 100%;
+}
+
+.products-grid li{
+  display: inline-block;
+  width: 20.33%;
+  margin: 0;
+  border-top: 1px dotted #b7b7b7;
+  position: relative;
+  margin: 0 20px 40px;
+}
+
+.products-grid li .new-img{
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  z-index: 100;
+  width: 24px;
+  height: 47px;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/new.png') left top no-repeat;
+  background-size: 24px 47px;
+}
+
+.products-grid li .new-img img{
+  display:none;
+}
+
+.products-grid li .grid-inner{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.products-grid li .grid-inner a{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.products-grid li .grid-inner a img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.products-grid li .product-box-2{
+  float: left;
+  width: 100%;
+}
+
+.products-grid li .product-box-2 .product-name{
+  float: left;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-left:75px
+}
+
+.products-grid li .product-box-2 .product-name a{
+  float: left;
+  width: 100%;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 14px;
+  color: #c0004e;
+  text-align: left;
+}
+
+.products-grid li .product-box-2 .product-atr-height{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box{
+  float: left;
+  width: 100%;
+  height: 25px;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box p{
+  float: left;
+  width: 100%;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box span{
+  float: left;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box .old-price,
+.products-grid li .product-box-2 .product-atr-height .price-box .minimal-price-link{
+  float: left;
+  width: 100%;
+  margin: 0 0 3px 0;
+  color: #000000;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box .old-price .price{
+  text-decoration: line-through;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box .special-price{
+  float: left;
+  width: 100%;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box .regular-price{
+  float: left;
+  width: 100%;
+}
+
+.products-grid li .product-box-2 .product-atr-height .price-box .price-label,
+.products-grid li .product-box-2 .product-atr-height .price-box .label{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #333;
+  padding: 7.5px 0 3.5px;
+  width: 90px;
+  text-align: left;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.products-grid li .product-box-2 .product-atr-height .minimal-price-link .label{
+  width: 70px;
+}
+
+.products-grid li .product-box-2 .actions{
+  float: left;
+  width: 100%;
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| PRODUTOS GRID CATEGORIA
+|--------------------------------------------------------------------------
+*/
+
+.catalog-category-view .main-container{
+  overflow: hidden;
+}
+
+.catalog-category-view .main-container .main .banner-collection{
+  float: left;
+  width: 100%;
+  height: 270px;
+  margin: 0 0 40px 0;
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper{
+  position: relative;;
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls .bx-controls-direction{
+  margin:  0 auto;
+  width: 1200px;
+  max-width: 100%;
+  position: relative;
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls .bx-controls-direction .bx-prev,
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+  position: absolute;
+  width: 21px;
+  height: 41px;
+  font-size: 0px;
+  line-height: 0px;
+  top: 178.5px;
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
+  left: 0;
+  background-image: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/banner-home-arrow-left.png");
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+  right: 0;
+  background-image: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/banner-home-arrow-right.png");
+}
+
+.catalog-category-view .main-container .main .banner-collection .bx-viewport,
+.catalog-category-view .main-container .main .banner-collection .bx-viewport ul,
+.catalog-category-view .main-container .main .banner-collection .bx-viewport ul li{
+  height: 270px !important;
+}
+
+.catalog-category-view .main-container .main .banner-collection ul li{
+  overflow: hidden;
+}
+
+.catalog-category-view .main-container .main .banner-collection img{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+}
+
+.catalog-category-view.category-philippe-starck .main-container .main .page-title{
+  display: none;
+}
+
+.catalog-category-view.category-philippe-starck .main-container .main .category-products-margin-top-banner{
+  margin-top: 0px;
+}
+
+.catalogsearch-result-index .sidebar,
+.catalog-category-view .sidebar{
+  display:none;
+}
+
+.catalog-category-view #banner-home{
+  padding-bottom: 40px;
+  height: 230px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| PRODUTOS DETALHE
+|--------------------------------------------------------------------------
+*/
+
+.product-view{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential .new-img-product{
+  position: absolute;
+  right: 10px;
+  top: -85px;
+  z-index: 100;
+  width: 24px;
+  height: 47px;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/new.png') left top no-repeat;
+  background-size: 24px 47px;
+}
+
+.product-view .product-essential .new-img-product img{
+  display:none;
+}
+
+.product-view .product-essential form{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-name{
+  float: left;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  margin: 0 0 50px 0;
+  padding-left:75px
+}
+
+.product-view .product-essential form .product-name .line{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dotted #CFCFCF;
+  z-index: 1;
+  top: 0%;
+  left: 0;
+}
+
+.product-view .product-essential form .product-name h1{
+  float: right;
+  width: 55%;
+  padding: 0 0 0 6%;
+  background: #FFF;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  color: #000000;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: -6px 0 0 0;
+}
+
+.product-view .product-essential form .produto-imagem{
+  float: left;
+  width: 42%;
+  margin-right: 1%;
+  margin-left: 2%;
+  position: relative;
+  padding-top: 1px;
+}
+
+.product-view .product-essential form .produto-imagem .imagem-produto-loader{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  z-index: 9999;
+}
+
+.product-view .product-essential form .product-img-box,
+.product-view .product-essential form .product-img-box .zoom-inner,
+.product-view .product-essential form .product-img-box .zoom-inner .product-image,
+.product-view .product-essential form .product-img-box .zoom-inner .product-image #wrap,
+.product-view .product-essential form .product-img-box .zoom-inner .product-image #wrap a,
+.product-view .product-essential form .product-img-box .zoom-inner .product-image #wrap a img{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-img-box .zoom-inner .product-image {
+  margin-bottom: 20px;
+}
+
+.product-view .product-essential form .product-img-box .zoom-inner .product-image #wrap a img{
+  margin-top: -1px;
+}
+
+.product-view .product-essential form .product-shop{
+  float: left;
+  width: 47%;
+  margin-left: 75px;
+}
+
+.product-view .product-essential form .product-shop .availability{
+  display: none;
+}
+
+.product-view .product-essential form .product-shop .price-box{
+  float: left;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom{
+  float: right;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .add-to-cart{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .add-to-cart .qty-wrapper{
+  float: left;
+  margin: 9px 30px 9px 0;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .add-to-cart .qty-wrapper .increase,
+.product-view .product-essential form .product-shop .product-options-bottom .add-to-cart .qty-wrapper .decrease{
+  float: left;
+  width: 35px;
+  color: #333;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0 9px 0;
+  border: 0px;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/products/background-tamanhos.png') left top no-repeat;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .add-to-cart .qty-wrapper .qty{
+  float: left;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/products/background-qty.png') left top no-repeat;
+  width: 45px;
+  text-align: center;
+  text-indent: 0;
+  box-shadow: none;
+  padding: 10px 0 9px 0;
+  margin: 0 4px;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .btn-cart{
+  float: right;
+  width: 167px;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .btn-cart.hidden{
+  display: none;
+}
+
+.product-view .product-essential form .product-shop .product-options-bottom .btn-cart:hover{
+  background-position: left bottom;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper{
+  float: left;
+  width: 100%;
+  margin: 30px 0 20px 0;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .grouped-selector{
+  border-top: 2px dotted #CFCFCF;
+  border-bottom: 0;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .grouped-selector h2{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font: italic 13px Arial,Helvetica,sans-serif;
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .grouped-selector .grouped-selection{
+  float: left;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.product-img-extra ul .selected {
+  border: 0px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/thumb-selected-swatch-botton.png") bottom center no-repeat;
+  padding-bottom: 5px;
+}
+
+.product-img-extra-min img {
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+}
+
+.product-img-extra-min:first-child img {
+  width:50px;
+  height:50px;
+}
+
+button.Next {
+  position: absolute;
+  top: 148px;
+  right: -40px;
+  display: block;
+  width: 20px;
+  height: 39px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/ico_next.png") no-repeat;
+  text-indent: -5000em;
+  border: none;
+  cursor: pointer;
+}
+
+button.Prev {
+  position: absolute;
+  top: 148px;
+  left: -40px;
+  display: block;
+  width: 20px;
+  height: 39px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/ico_prev.png") no-repeat;
+  text-indent: -5000em;
+  border: none;
+  cursor: pointer;
+}
+
+#zoom1 img {
+  width: 100% !important;
+  height: 374px !important;
+  left: 0 !important;
+  right: 0;
+  top: 0px !important;
+  transform: scale(1.1);
+}
+
+.zoom-inner {
+  display: inline-block;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .grouped-selector .selected{
+  border: 0px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/thumb-selected-swatch.png") top center no-repeat;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector{
+  float: left;
+  width: 100%;
+  border-top: 2px dotted #CFCFCF;
+  border-bottom: 2px dotted #CFCFCF;
+  margin: -8px 0 0 0;
+  padding: 20px 0;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector h2{
+  float: left;
+  width: auto;
+  color: #000000;
+  font: italic 13px Arial,Helvetica,sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 8.5px 0;
+  margin: 0 10px 0 0;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table{
+  float: left;
+  margin-top: -5px;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr{
+  float: left;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td{
+  float: left;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td span{
+  float: left;
+  width: 35px;
+  color: #333;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  text-align: center;
+  margin: 5px 5px 0 5px;
+  cursor: pointer;
+  padding: 10px 0 9px 0;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/products/background-tamanhos.png') left top no-repeat;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td span.selected,
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td span:hover{
+  background-position: left -32px;
+  color: #c0004e;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td .tamanho-menor-calcado,
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td .tamanho-maior-calcado{
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td .tamanho-menor-calcado{
+  margin: -6px 0 0 0;
+  width: 18px;
+  text-align: right;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td .tamanho-maior-calcado{
+  float: right;
+  width: 18px;
+  text-align: left;
+  margin: -1px 0 -6px 0;
+  clear: both;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector table tr td.out-of-stock span{
+  color: #DEDEE0;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector .viewChartSizeBox{
+  float: right;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector .viewChartSizeBox button{
+  float: left;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/size-icon.png') left top no-repeat;
+  cursor:pointer;
+  width: 91px;
+  height: 24px;
+  font-size: 0;
+  line-height: 0;
+  border: 0;
+  padding: 0;
+}
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector .viewChartSizeBox button:hover{
+  background-position: left bottom;
+}
+
+.product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector .viewChartSizeBox button span{
+  display:none;
+}
+
+.product-view #image-size-chart-background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.product-view #image-size-chart{
+  position: fixed;
+  width: 894px;
+  height: 419px;
+  z-index: 1001;
+  left: 50%;
+  top: 50%;
+  margin: -209.5px 0 0 -447px;
+  display: none;
+}
+
+.product-view #image-size-chart img{
+  float: left;
+  width: 100%;
+}
+
+.product-view #image-size-chart .close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 9px;
+  height: 10px;
+  cursor: pointer;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAA0klEQVQoz2PY1u7+39jV9b+BdsX/S1/+/2cAgjtbGv8b6Lv/11d0/7/+2vf/DB8vTARJgHHE5DtgRTkMrGC+oMbk//8h+hgYFoRBFPFLTPl/FknTvDM/EYp+P14Ll4Bhaf91YFm4IhDYUq8KV8DMYPR/56v/mIqebomGK2JlCPx/5z+aov//r/z3Z2BBsS6w6zKqon0dymAJPpnK//Nm+oDZjAyq/3c8+A9x+O/Hi+C6E5c9BWuLgwaBuMMciKIZ/hAF7AyZ/2/DAzMPrnHqoZ//AXPjlywlNZrZAAAAAElFTkSuQmCC") left top no-repeat;
+}
+
+.product-view .product-essential form .product-shop .row-product{
+  float: left;
+  width: 100%;
+  border-bottom: 2px dotted #CFCFCF;
+  padding: 0 0 20px 0;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li{
+  float: left;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li span.separator{
+  display: none;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li p{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li a{
+  float: left;
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 0 0 0 10px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li:first-child a{
+  margin-left: 0px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li a:hover{
+  color: #A81048;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li p.no-rating a{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/marker-reviews.png") left center no-repeat;
+  padding: 2px 0 1px 32px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li a.email-friend{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/sprite-icons-product-page.png") 0 -29px no-repeat;
+  padding: 2px 0 1px 32px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li a.link-wishlist{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/sprite-icons-product-page.png") 0 -62px no-repeat;
+  padding: 2px 0 2px 32px;
+  margin-bottom: -1px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li .rating-links a:first-of-type{
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/sprite-icons-product-page.png') 0 0 no-repeat;
+  padding: 2px 0 4px 32px;
+  margin-bottom: -4px;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li .rating-links a:last-of-type{
+  padding: 2px 0 1px 0;
+  background: none;
+}
+
+.product-view .product-essential form .product-shop .row-product .add-to-links li .rating-links span{
+  float: left;
+  display: block !important;
+  margin: 1px 5px -1px 5px;
+}
+
+.product-view .product-essential form .product-shop .share{
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox a{
+  float: left;
+  overflow: hidden;
+  margin: 0 5px 0 0;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox a.addthis_button_facebook_like{
+  width: 104px;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox a.addthis_button_tweet{
+  width: 59px;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox a.addthis_button_google_plusone{
+  width: 55px;
+}
+
+.product-view .product-essential form .product-shop .share .addthis_toolbox a.addthis_counter{
+  width: 54px;
+}
+
+.product-view .product-collateral{
+  float: left;
+  width: 100%;
+}
+
+.product-view .product-collateral #tabs_select_chosen,
+.product-view .product-collateral #tabs-select{
+  float: left;
+  width: 100% !important;
+  display: none;
+  margin: 30px 0;
+}
+
+.product-view .tabs{
+  margin: 50px 0 -1px 0 !important;
+}
+
+.product-view .tabs li{
+  background-color: #f1f1f1;
+  border: 1px solid #b8b8b8;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin-right: 2px;
+}
+
+.product-view .tabs li.first{
+  border: 1px solid #b8b8b8 !important;
+}
+
+.product-view .tabs li a{
+  border: none;
+  padding: 20px !important;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 13px !important;
+  font-style: italic;
+  font-weight: normal !important;
+}
+
+.product-view .tabs li a:hover{
+  background: #FFF !important;
+  padding: 20px !important;
+  font-size: 13px !important;
+  line-height: 13px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.product-view .tabs li.active{
+  border-bottom: 1px solid #FFF !important;
+  background: #FFF !important;
+}
+
+.product-view .tabs li.active a{
+  background: #FFF !important;
+}
+
+.product-view .padder #product_tabs_description_tabbed_contents{
+  background: #FFF !important;
+  color: #000000;
+  font-family: 'HelvelticaNeue',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: 0px;
+  border-top: 1px solid #B8B8B8 !important;
+}
+
+.product-view .padder #product_tabs_tags_tabbed_contents{
+  background: #FFF !important;
+  border: 0px;
+  border-top: 1px solid #B8B8B8 !important;
+}
+
+.product-view .padder #product_tabs_description_tabbed_contents h3{
+  font-weight: bold;
+}
+
+.product-view .padder #product_tabs_tags_tabbed_contents label{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  margin: 0 0 10px 0;
+}
+
+.product-view .padder #product_tabs_tags_tabbed_contents .input-text{
+  float: left;
+  width: 300px;
+}
+
+.product-view .padder #product_tabs_tags_tabbed_contents p.note{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  margin: 5px 0 20px 0;
+}
+
+.product-view .padder #product_tabs_tags_tabbed_contents .button{
+  float: left;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents{
+  background: #FFF !important;
+  border: 0px;
+  border-top: 1px solid #B8B8B8 !important;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews{
+  float: left;
+  width: 100%;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 2px dotted #CFCFCF;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol{
+  float: left;
+  width: 100%;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol li{
+  float: left;
+  width: 100%;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol li strong{
+  float: left;
+  width: 100%;
+  color: #000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol li .autor{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol li table{
+  display: none;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents #customer-reviews ol li p{
+  float: left;
+  width: 100%;
+  color: #000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents h2{
+  float: left;
+  width: 100%;
+  color: #000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents form{
+  float: left;
+  width: 100%;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents label,
+.product-view .padder #product_tabs_review_tabbed_contents h3{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 13px;
+  margin: 10px 0;
+}
+
+.product-view .padder #product_tabs_review_tabbed_contents .button{
+  margin: 20px 0 0 0;
+}
+
+.product-view .viewChartSizesListBackground{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 1001;
+  display: none;
+}
+
+.product-view .viewChartSizesListContent{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1002;
+  display: none;
+}
+
+.product-view .viewChartSizesListContent .close{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #FFF;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.product-view .viewChartSizesListContent img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*
+|--------------------------------------------------------------------------
+| BREADCRUMB
+|--------------------------------------------------------------------------
+*/
+
+.breadcrumbs{
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs ul{
+  float: left;
+  width: 100%;
+  margin: 20px 0 19px 0;
+}
+
+.breadcrumbs ul li{
+  float: left;
+}
+
+.breadcrumbs ul li:first-child{
+  margin-left: 0;
+  padding-left: 0;
+  background: none;
+}
+
+.breadcrumbs ul li a,
+.breadcrumbs ul li span,
+.breadcrumbs ul li strong{
+  float: left;
+  color: #888888;
+  font-family: "Poppins";
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.breadcrumbs ul li span{
+  padding: 0 10px;
+  position: relative;
+  top: 1px;
+}
+
+.breadcrumbs ul li strong{
+  color: #888888;
+}
+
+/*
+|--------------------------------------------------------------------------
+| TOOLBAR
+|--------------------------------------------------------------------------
+*/
+
+.toolbar{
+  float: left;
+  width: 100%;
+  margin: 0 0 30px 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.toolbar .pager{
+  float: left;
+  padding: 9px 10px 7px 0;
+}
+
+.toolbar .pager .amount{
+  float: left;
+}
+
+.toolbar .pager .limiter{
+  display: none;
+}
+
+.toolbar .pager .amount strong{
+  float: left;
+  color: #000000;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: italic;
+}
+
+.toolbar .pager .amount strong span{
+  font-weight: 800;
+  font-style: normal;
+}
+
+.toolbar .sorter{
+  float: right;
+}
+
+.toolbar .sorter label{
+  float: left;
+  color: #000000;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 9px 0 7px 0;
+  font-style: italic;
+}
+
+.toolbar .sorter .chosen-container{
+  width: auto !important;
+  margin: 0 5px 0 0;
+  width: 100px !important;
+}
+
+.toolbar .clear{
+  display: none;
+}
+
+.toolbar .sort-by a[href*="order"]{
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| SELECT
+|--------------------------------------------------------------------------
+*/
+
+.chosen-container{
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.chosen-container-active .chosen-single,
+.chosen-container .chosen-single{
+  border: 0px !important;
+  box-shadow: none !important;
+  height: 32px !important;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/select/background.png") left top !important;
+}
+
+.chosen-container .chosen-single span{
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  padding: 10px 0;
+}
+
+.chosen-container .chosen-single div,
+.chosen-container .chosen-single div b{
+  width: 30px !important;
+  height: 32px !important;
+}
+
+.chosen-container .chosen-single div b{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/select/seta-2.png") left 1px no-repeat !important;
+}
+
+.chosen-container .chosen-results li{
+  width: 100% !important;
+}
+
+select{
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  color: #535353;
+  padding: 10px 15px !important;
+  border: 0px !important;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/select/background-default.png") right top no-repeat !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| BACK TO TOP
+|--------------------------------------------------------------------------
+*/
+
+#back-top a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 41px;
+  height:41px;
+  background: url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/setas/up.png) left top;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#back-top a:hover{
+  background-position: left bottom;
+}
+
+/*
+|--------------------------------------------------------------------------
+| PAGE TITLE
+|--------------------------------------------------------------------------
+*/
+
+.page-title{
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 0 0 50px 0;
+}
+
+.page-title .line{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dotted #CFCFCF;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+
+.page-title h1{
+  padding: 0 2%;
+  background: #FFF;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  color: #000000;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/*
+|--------------------------------------------------------------------------
+| AJAX PROGRESS
+|--------------------------------------------------------------------------
+*/
+
+.ajaxcartpro_confirm,
+.ajaxcartpro_confirm p,
+.ajaxcartpro_progress p,
+.ajaxcartpro_progress{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+}
+
+#aw_acp_continue,
+#aw_acp_checkout{
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 19px !important;
+  line-height: 19px !important;
+  text-transform: uppercase !important;
+  font-weight: normal !important;
+  height: auto !important;
+  padding: 14px 0 15px 0 !important;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/inputs/background-submit.png") left top !important;
+}
+
+#aw_acp_continue:hover,
+#aw_acp_checkout:hover{
+  background-position: left -48px !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FORMULARIOS
+|--------------------------------------------------------------------------
+*/
+
+form .fieldset{
+  float: left;
+  width: 100%;
+}
+
+form .fieldset .legend{
+  float: left;
+  width: 98%;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 1% 20px 1%;
+}
+
+form .fieldset .form-list{
+  float: left;
+  width: 100%;
+  margin: -10px 0 20px 0;
+}
+
+form .fieldset .form-list li,
+form .fieldset .form-list li .fields{
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+
+form .fieldset .form-list li .field,
+form .fieldset .form-list li.fields .field{
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+}
+
+form .fieldset .form-list li.wide .input-box,
+form .fieldset .form-list li.wide label,
+form .buttons-set{
+  float: left;
+  width: 98%;
+  margin: 0 1%;
+}
+
+form .fieldset .form-list li.wide label{
+  margin: 10px 1% 3px 1%;
+}
+
+form .fieldset .form-list li label{
+  float: left;
+  width: 100%;
+  margin: 10px 0 3px 0;
+  line-height: 13px;
+}
+
+form .fieldset .form-list li .input-box{
+  float: left;
+  width: 100%;
+}
+
+form .fieldset .form-list li input,
+form .fieldset .form-list li .input-box .chosen-container{
+  float: left;
+  width: 100%;
+}
+
+form .fieldset .form-list li .input-box .chosen-container{
+  width: 100% !important;
+}
+
+form .fieldset .form-list li.control{
+  width: 98%;
+  margin: 0 1%;
+}
+
+form .fieldset .form-list li.control label,
+form .fieldset .form-list li.control .input-box,
+form .fieldset .form-list li.control input{
+  width: auto !important;;
+}
+
+form .fieldset .form-list li.control .input-box{
+  margin-right: 5px;
+}
+
+form .fieldset .form-list li.control input{
+  margin: 10px 5px 0 0;
+}
+
+form .fieldset .form-list li.control input,
+form .fieldset .form-list li.control label{
+  cursor:pointer;
+}
+
+form .validation-advice{
+  float: left;
+  width: 100%;
+  color: #C0004E;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 11px;
+  margin: 3px 0 0 0;
+}
+
+.buttons-set{
+  float: left;
+  width: 100%;
+  margin: 20px 1% 0 1%;
+  position: relative;
+}
+
+.buttons-set .required{
+  float: left;
+}
+
+.buttons-set .back-link{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 14px;
+}
+
+.buttons-set .back-link *{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.buttons-set .back-link small{
+  display: inline;
+}
+
+.buttons-set .required{
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.buttons-set .button{
+  float: right;
+  clear: both;
+  margin: -15px 0 0 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CART
+|--------------------------------------------------------------------------
+*/
+
+.cart{
+  float: left;
+  width: 100%;
+}
+
+.cart .page-title .checkout-types{
+  display: none;
+}
+
+.checkout-cart-index .cart-empty{
+  float: left;
+  width: 100%;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.checkout-cart-index .cart-empty p{
+  margin: 0 0 5px 0;
+}
+
+.checkout-cart-index .cart-empty p:last-of-type{
+  margin-bottom: 0;
+}
+
+.checkout-cart-index .cart-empty p a{
+  color: #000;
+}
+
+.checkout-cart-index .cart-empty p a:hover{
+  color: #C0004E;
+}
+
+.cart form,
+.cart form fieldset,
+.cart form fieldset .radius-cart,
+.cart form fieldset .radius-cart table,
+.cart form fieldset .radius-cart table thead,
+.cart form fieldset .radius-cart table tbody,
+.cart form fieldset .radius-cart table tfoot,
+.cart form fieldset .radius-cart table thead tr,
+.cart form fieldset .radius-cart table tfoot tr,
+.cart form fieldset .radius-cart table tfoot tr td,
+.cart form fieldset .radius-cart table tbody tr{
+  float: left;
+  width: 100%;
+}
+
+.cart form fieldset .radius-cart table colgroup{
+  display: none;
+}
+
+.cart form fieldset .radius-cart table thead tr th,
+.cart form fieldset .radius-cart table tbody tr td{
+  float: left;
+}
+
+.cart form fieldset .radius-cart table thead tr th{
+  margin: 0 0 0 2%;
+  padding: 0 0 15px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  font-style: italic;
+  text-transform: uppercase;
+  border-bottom: 1px solid #DBDBDB;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table thead tr th.wishlist,
+.cart form fieldset .radius-cart table tbody tr td.Wishlist{
+  display: none;
+}
+
+.cart form fieldset .radius-cart table tbody tr td{
+  margin: 0 0 0 2%;
+  padding: 15px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  border-bottom: 1px solid #DBDBDB;
+  min-height: 77px;
+  position: relative;
+}
+
+.cart form fieldset .radius-cart table tbody tr td a{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.cart form fieldset .radius-cart table thead tr th:first-of-type,
+.cart form fieldset .radius-cart table tbody tr td:first-of-type{
+  margin-left: 0;
+}
+
+.cart form fieldset .radius-cart table thead tr th.image,
+.cart form fieldset .radius-cart table tbody tr td.image{
+  width: 12%;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table thead tr th.description,
+.cart form fieldset .radius-cart table tbody tr td.description{
+  width: 26%;
+  text-align: left;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.description h2{
+  float: left;
+  width: 100%;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.description dt{
+  float: left;
+  clear: both;
+  margin: 5px 5px 0 0;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.description dd{
+  float: left;
+  width: auto;
+  color: #C0004E;
+  margin: 5px 0 0 0;
+}
+
+.cart form fieldset .radius-cart table thead tr th.edit,
+.cart form fieldset .radius-cart table tbody tr td.edit{
+  width: 10%;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.edit a{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/cart/edit.png") left top no-repeat;
+  height: 32px;
+  width: 32px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+}
+
+.cart form fieldset .radius-cart table thead tr th.price-unit,
+.cart form fieldset .radius-cart table tbody tr td.price-unit{
+  width: 10%;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table thead tr th.qty,
+.cart form fieldset .radius-cart table tbody tr td.qty{
+  width: 10%;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.qty .qty-wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 123px;
+  height: 32px;
+  margin:  -16px 0 0 -60px;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.qty .increase,
+.cart form fieldset .radius-cart table tbody tr td.qty .decrease{
+  float: left;
+  color: #333;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  text-align: center;
+  cursor: pointer;
+  padding: 7.5px 0;
+  border: 0px;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/products/background-tamanhos.png') left top no-repeat;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.qty .qty{
+  float: left;
+  background:url('https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/products/background-qty.png') left top no-repeat;
+  width: 45px;
+  text-align: center;
+  text-indent: 0;
+  box-shadow: none;
+  padding: 8.5px 0;
+  margin: 0 4px;
+}
+
+.cart form fieldset .radius-cart table thead tr th.subtotal,
+.cart form fieldset .radius-cart table tbody tr td.subtotal{
+  width: 10%;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.price-unit .cart-price,
+.cart form fieldset .radius-cart table tbody tr td.subtotal .cart-price{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin: -12px 0 0 0;
+}
+
+.cart form fieldset .radius-cart table thead tr th.actions,
+.cart form fieldset .radius-cart table tbody tr td.actions{
+  width: 10%;
+  text-align: center;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.actions a{
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/cart/delete.png") left top no-repeat;
+  width: 30px;
+  height: 36px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.edit a:hover,
+.cart form fieldset .radius-cart table tbody tr td.actions a:hover{
+  background-position: left bottom;
+}
+
+.cart form fieldset .radius-cart table tbody tr td.price-unit span,
+.cart form fieldset .radius-cart table tbody tr td.subtotal span{
+  color: #000000;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.cart form fieldset .radius-cart table tfoot{
+  padding: 15px 0;
+}
+
+.cart form fieldset .radius-cart table tfoot tr td button{
+  float: right;
+}
+
+.cart form fieldset .radius-cart table tfoot tr td button.btn-continue{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  padding: 5px 0 5px 32px;
+  margin: 0 20px 0 0;
+  text-transform: none;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/cart/continuar-comprando.png") left center no-repeat;
+}
+
+.cart form fieldset .radius-cart table tfoot tr td button.btn-update{
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  padding: 5px 0 5px 36px;
+  text-transform: none;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/cart/update.png") left center no-repeat;
+}
+
+.cart form fieldset .radius-cart table tfoot tr td button.btn-continue:hover,
+.cart form fieldset .radius-cart table tfoot tr td button.btn-update:hover{
+  color: #C0004E;
+}
+
+.cart .cart-collaterals{
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.cart .cart-collaterals .col2-set{
+  float: left;
+  width: 66.66%;
+}
+
+.cart .cart-collaterals .col2-set .col-1{
+  float: left;
+  width: 46%;
+  margin: 0 4% 0 0;
+}
+
+.cart .cart-collaterals .col2-set .col-1 form{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .col2-set form .button{
+  float: left;
+  margin: 0 10px 0 0;
+  clear: none;
+}
+
+.cart .cart-collaterals .col2-set .col-1 form .discount{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .col2-set .col-1 form .discount .input-box{
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 .page-title h2,
+.cart .cart-collaterals .col2-set .col-1 form .discount h2{
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "YanoneKaffeesatzRegular";
+  display: inline-block;
+  padding: 0 2%;
+  background: #FFF;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.cart .cart-collaterals .col2-set .col-2{
+  float: left;
+  width: 46%;
+  margin: 0 4% 0 0;
+}
+
+.cart .cart-collaterals .col2-set .col-1 p,
+.cart .cart-collaterals .col2-set .col-2 p,
+.cart .cart-collaterals .col2-set .col-1 label,
+.cart .cart-collaterals .col2-set .col-2 label{
+  float: left;
+  width: 100%;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.cart .cart-collaterals .col2-set .col-2 .form-list{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .col2-set .col-2 .form-list li{
+  float: left;
+  width: 100%;
+  margin: 10px 0 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 .form-list li label{
+  margin: 0 0 5px 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 .buttons-set{
+  float: left;
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form{
+  width: 100%;
+  margin: 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods,
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dt,
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd,
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul,
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul li{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dt{
+  float: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dt .line{
+  border-top: 2px dotted #CFCFCF;
+  height: 2px;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dt span{
+  background: #FFFFFF;
+  color: #000;
+  display: inline-block;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0 2%;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul li{
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul li div{
+  float: left;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul li input{
+  float: left;
+  margin: 0 0 10px 0;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .sp-methods dd ul li label{
+  width: auto;
+  margin: 1px 0 0 10px;
+  cursor: pointer;
+}
+
+.cart .cart-collaterals .col2-set .col-2 #co-shipping-method-form .buttons-set{
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.cart .cart-collaterals .totals{
+  float: left;
+  width: 27.33%;
+  padding: 3%;
+  border-top: 2px dotted #CFCFCF;
+  background: #F1F1F1;
+  margin: 11px 0 0 0;
+}
+
+.cart .cart-collaterals .totals #text_sales_collected_tax{
+  float: left;
+  width: 100%;
+  margin: 15px 0 0 0;
+}
+
+.cart .cart-collaterals .totals #text_sales_collected_tax p{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table colgroup{
+  display: none;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr{
+  float: left;
+  width: 100%;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr td{
+  float: left;
+  width: 50%;
+  padding: 0 0 30px 0;
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-style: italic;
+  line-height: 13px;
+  text-transform: uppercase
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td{
+  padding-top: 0;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td strong,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td span,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr td strong,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr td span{
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td strong,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr td strong{
+  padding: 7px 0 4px;
+}
+
+.cart .cart-collaterals .totals #shopping-cart-totals-table tfoot tr td span.price,
+.cart .cart-collaterals .totals #shopping-cart-totals-table tbody tr td span.price{
+  text-align: right;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.cart .cart-collaterals .totals .checkout-types,
+.cart .cart-collaterals .totals .checkout-types li{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.cart .cart-collaterals .totals .checkout-types li .button{
+  float: left;
+  width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CHECKOUT
+|--------------------------------------------------------------------------
+*/
+
+#onestepcheckout-form{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-index-index form .validation-advice{
+  margin: -5px 0 5px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form,
+.onestepcheckout-index-index #onestepcheckout-form fieldset{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form fieldset{
+  padding: 0 !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-description,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-login-link{
+  float: left;
+  width: 100%;
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 0 0 10px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-login-link a:hover{
+  color: #C0004E;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right{
+  float: left;
+  width: 29.33%;
+  margin: 0;
+  padding: 2%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address ul,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address ul li,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address ul,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address li,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address ul li .input-box label{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .group-select .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address li{
+  padding: 0 !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address ul li label,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address label{
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address ul li{
+  padding: 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li.control label,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li.control input{
+  width: auto !important;
+  float: left !important;
+  margin: 0 !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li.control input{
+  margin-right: 5px !important;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .abrir-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .fechar-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .abrir-endereco-entrega-dois,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .fechar-endereco-entrega-dois{
+  color: #000000;
+  cursor: pointer;
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .fechar-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .fechar-endereco-entrega-dois{
+  display: none;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .enderecos{
+  border-top: 1px solid #d8d2c7;
+  color: #000000;
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 16px;
+  margin: 0 0 10px;
+  padding: 10px 0 0;
+  width: 100%;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .endereco-ativo{
+  color: #c0004e;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .endereco,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .cidade-estado,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .cep,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega-dois{
+  float: left;
+  width: 100%;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega-dois{
+  cursor: pointer;
+  margin: 10px 0 0;
+  width: auto;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address_select_chosen,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left #billing_address_select_chosen,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .endereco-ativo .usar-este-endereco-entrega,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .endereco-ativo .usar-este-endereco-entrega-dois{
+  display: none;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left .input-different-shipping input{
+  margin-left: 0 !important;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega:hover,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega-dois:hover{
+  text-decoration: underline;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left #billing-address-select,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .billing_address_list{
+  display: none;
+}
+
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega .loader,
+#onestepcheckout-form fieldset .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .usar-este-endereco-entrega-dois loader{
+  display: none;
+  width: 10px;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address{
+  margin: 30px 0 0 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left .onestepcheckout-numbers,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left #shipping_address ul li.shipping-address-title,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-numbers,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-numbers{
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  height: auto;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-box,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .input-box{
+  float: left;
+  width: 100% !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-box label,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li label{
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 0 0 5px 0 !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-box input,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .input-box input{
+  float: left;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-box .chosen-container,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .input-box .chosen-container{
+  float: left;
+  width: 100% !important;
+  margin: 0 0 10px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-different-shipping label,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left ul li .input-different-shipping input{
+  width: auto !important;
+  margin: 0 5px 0 0 !important;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .onestepcheckout-shipping-method-block,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipment-methods,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipment-methods dt,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipping-info,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dt,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle #payment-tool-tip .block-content,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle #payment-tool-tip .block-content img,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-summary,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-place-order-wrapper{
+  float: left;
+  width: 100%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipment-methods dd{
+  display: none;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method{
+  margin: 0 0 20px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .shipment-methods dt input{
+  float: left;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .shipment-methods dt .styledRadio{
+  float: left;
+  margin: -1px 0 0 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .shipment-methods dt label{
+  float: left;
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 0 0 5px 5px;
+  cursor: pointer;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipping-info a,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .cvv-what-is-this{
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .onestepcheckout-shipping-method .shipping-info a:hover,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .cvv-what-is-this:hover{
+  color: #C0004E;
+}
+
+/*.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dt{
+display: none;
+}*/
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd{
+  padding: 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .input-box .month{
+  float: left;
+  width: 65%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle .payment-methods dl dd ul li .input-box .year{
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-summary table thead tr th{
+  border-top: 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-summary table thead tr th,
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-summary table tbody tr td{
+  color: #000000;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  margin: 10px 0 0 0;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-summary table span.price{
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-place-order-wrapper{
+  margin: 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-place-order-wrapper button{
+  float: left;
+  width: 100%;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 19px;
+  line-height: 19px;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/inputs/background-submit.png") left top;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: 0px;
+  padding: 14px 10px 13px 10px;
+  cursor: pointer;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-place-order-wrapper button:hover{
+  background-position: left -48px;
+}
+
+.onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right .onestepcheckout-place-order-wrapper button span{
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 19px;
+  border: 0;
+}
+
+.checkout-onepage-success .sidebar{
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| LOGIN
+|--------------------------------------------------------------------------
+*/
+
+.account-login{
+  float: left;
+  width: 100%;
+}
+
+.account-login #login-form,
+.account-login #login-form .col2-set{
+  float: left;
+  width: 100%;
+}
+
+.account-login #login-form .col2-set h2{
+  float: left;
+  width: 100%;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.account-login #login-form .col2-set p,
+.account-login #login-form .col2-set label{
+  float: left;
+  width: 100%;
+  margin: 0 0 10px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.account-login #login-form .col2-set label{
+  margin: 0 0 5px 0;
+}
+
+.account-login #login-form .col2-set .new-users,
+.account-login #login-form .col2-set .registered-users{
+  float: left;
+  width: 43.2%;
+  padding: 2%;
+  border: 2px dotted #CFCFCF;
+}
+
+.account-login #login-form .col2-set .new-users{
+  margin: 0 4% 0 0;
+}
+
+.account-login #login-form .col2-set .registered-users .content,
+.account-login #login-form .col2-set .registered-users .content .form-list,
+.account-login #login-form .col2-set .registered-users .content .form-list li,
+.account-login #login-form .col2-set .registered-users .content .form-list li .input-box,
+.account-login #login-form .col2-set .registered-users .content .buttons-set{
+  float: left;
+  width: 100%;
+}
+
+.account-login #login-form .col2-set .new-users .buttons-set .button,
+.account-login #login-form .col2-set .registered-users .content .buttons-set .button{
+  margin-top: 0;
+}
+
+.account-login #login-form .col2-set .registered-users .content .form-list li{
+  width: 48%;
+}
+
+.account-login #login-form .col2-set .registered-users .content .form-list li:first-child{
+  margin-right: 2%;
+}
+
+.account-login #login-form .col2-set .registered-users .content .form-list li .input-box input{
+  float: left;
+  width: 100%;
+}
+
+.account-login #login-form .col2-set .registered-users .content p.required{
+  margin-top: 3px;
+}
+
+.account-login #login-form .col2-set .registered-users .content .buttons-set a{
+  float: left;
+}
+
+.account-login #login-form .col2-set .registered-users .content .buttons-set .button{
+  float: left;
+  margin-top: 0;
+}
+
+.account-login #login-form .col2-set .registered-users .content .buttons-set .f-left{
+  float: right;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  margin: 35px 0 0 0;
+}
+
+.account-login #login-form .col2-set .registered-users .content .buttons-set .f-left:hover{
+  color: #C0004E;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CRIAR CONTA
+|--------------------------------------------------------------------------
+*/
+
+.account-create{
+  float: left;
+  width: 100%;
+}
+
+.account-create #form-validate{
+  float: left;
+  width: 97.4%;
+  padding: 1%;
+  border: 2px dotted #CFCFCF;
+}
+
+.account-create #form-validate label{
+  float: left;
+  width: 100%;
+  margin: 10px 0 3px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+}
+
+.account-create #form-validate .back-link{
+  width: 50px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| RECUPERAR SENHA
+|--------------------------------------------------------------------------
+*/
+
+.customer-account-forgotpassword #form-validate{
+  float: left;
+  width: 95.4%;
+  padding: 20px 2%;
+  border: 2px dotted #CFCFCF;
+}
+
+.customer-account-forgotpassword #form-validate .fieldset{
+  float: left;
+  width: 100%;
+}
+
+.customer-account-forgotpassword #form-validate .fieldset .legend{
+  float: left;
+  width: 98%;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.customer-account-forgotpassword #form-validate p,
+.customer-account-forgotpassword #form-validate label,
+.customer-account-forgotpassword #form-validate a{
+  float: left;
+  width: 100%;
+  margin: 10px 0 3px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.customer-account-forgotpassword #form-validate a:hover{
+  color: #C0004E;
+}
+
+.customer-account-forgotpassword #form-validate ul,
+.customer-account-forgotpassword #form-validate ul li,
+.customer-account-forgotpassword #form-validate ul li .input-box{
+  float: left;
+  width: 100%;
+}
+
+.customer-account-forgotpassword #form-validate ul li .input-box input{
+  width: 350px;
+}
+
+.customer-account-forgotpassword #form-validate .buttons-set{
+  float: left;
+  width: 100%;
+  margin: -29px 0 0 0;
+}
+
+.customer-account-forgotpassword #form-validate .buttons-set .button{
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+.customer-account-forgotpassword #form-validate .buttons-set p.back-link,
+.customer-account-forgotpassword #form-validate .buttons-set p.back-link a{
+  float: right;
+  width: auto;
+  margin: 0;
+  right: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| RESET PASSWORD
+|--------------------------------------------------------------------------
+*/
+
+.customer-account-resetpassword #form-validate{
+  float: left;
+  width: 95.4%;
+  border: 2px dotted #cfcfcf;
+  padding: 2%;
+}
+
+.customer-account-resetpassword #form-validate .fieldset{
+  margin: 0 !important;
+}
+
+.customer-account-resetpassword #form-validate h2{
+  color: #c0004e;
+  float: left;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.customer-account-resetpassword #form-validate .fieldset .form-list .fields .field{
+  margin: 0;
+}
+
+.customer-account-resetpassword #form-validate .fieldset .form-list .fields .field{
+  width: 49%;
+}
+
+.customer-account-resetpassword #form-validate .fieldset .form-list .fields .field:first-of-type{
+  margin-right: 2%;
+}
+
+.customer-account-resetpassword #form-validate .fieldset .form-list .fields label{
+  float: left;
+  width: 100%;
+  margin: 10px 0 3px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.customer-account-resetpassword #form-validate .buttons-set{
+  margin: 0;
+  width: 100%;
+}
+
+.customer-account-resetpassword #form-validate .buttons-set .required{
+  float: left;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CONTA
+|--------------------------------------------------------------------------
+*/
+
+.my-account{
+  float: left;
+  width: 100%;
+  min-height: 443px;
+
+}
+
+.my-account .welcome-msg{
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.my-account .welcome-msg .hello{
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.my-account .box-account{
+  float: left;
+  width: 100%;
+}
+
+.my-account .box-account #my-orders-table{
+  float: left;
+  width: 103.3%;
+  margin: 0 0 20px -10px;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+.my-account .box-account #my-orders-table th{
+  padding: 15px 0 5px 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  color: #000;
+  border-bottom: 1px solid #DBDBDB;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.my-account .box-account #my-orders-table td{
+  padding: 5px 0 0 0;
+}
+
+.my-account .box-account .box-head{
+  float: left;
+  width: 100%;
+}
+
+.my-account .box-account .box-head h2{
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.my-account .box-account .col2-set{
+  float: left;
+  width: 100%;
+}
+
+.my-account .box-account .col2-set .col-1{
+  float: left;
+  width: 48%;
+}
+
+.my-account .box-account .col2-set .col-2{
+  float: left;
+  width: 48%;
+  margin: 0 0 0 4%;
+}
+
+.my-account .box-account .col2-set .box{
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.my-account .box-account .col2-set .box .box-title{
+  float: left;
+  width: 100%;
+  position: relative;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px dotted #CFCFCF;
+  font-style: italic;
+}
+
+.my-account .box-account .col2-set .box .box-title a{
+  position: absolute;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  top: 2.5px;
+  right: 0;
+}
+
+.my-account .dashboard,
+.my-account #form-validate,
+.my-account .addresses-list,
+.my-account .billing-agreements,
+.my-account .recurring-profiles,
+.my-account .my-product-review,
+.my-account .my-tags,
+.my-account .my-wishlist,
+.my-account .my-orders,
+.my-account .details-order,
+.my-account .details-order-itens,
+.my-account .order-details .buttons-set{
+  float: left;
+  position: relative;
+  width: 64.5%;
+  margin: 0 0 0 31%;
+  border: 2px dotted #CFCFCF;
+  padding: 20px 2%;
+}
+
+.my-account .messages{
+  float: left;
+  position: relative;
+  width: 64.5%;
+  margin: 0 0 20px 31%;
+}
+
+.my-account .dashboard .messages{
+  width: 100%;
+  margin-left: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CONTA ENDERECO
+|--------------------------------------------------------------------------
+*/
+
+.customer-address-form #street_2{
+  margin-top: 10px;
+}
+
+.customer-address-form .form-list li strong{
+  display: none;
+}
+
+.my-account .addresses-list .col-1,
+.my-account .addresses-list .col-2{
+  float: left;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.my-account .addresses-list .col-1 h2,
+.my-account .addresses-list .col-2 h2{
+  float: left;
+  width: 100%;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.my-account .addresses-list .col-1 ol,
+.my-account .addresses-list .col-2 ol{
+  float: left;
+  width: 105%;
+  margin: -10px 0 20px 0;
+}
+
+.my-account .addresses-list .col-1 ol li,
+.my-account .addresses-list .col-2 ol li{
+  float: left;
+  width: 45%;
+  margin: 10px 5% 0 0;
+}
+
+.my-account .addresses-list .col-1 ol li h3,
+.my-account .addresses-list .col-2 ol li h3{
+  float: left;
+  width: 100%;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px dotted #CFCFCF;
+  font-style: italic;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CONTA ORDERS
+|--------------------------------------------------------------------------
+*/
+
+.sales-order-history .buttons-set,
+.sales-order-history .pager .amount,
+.sales-order-view .order-details .table-caption,
+.sales-order-view dl.order-info{
+  display: none;
+}
+
+.my-account .details-order,
+.my-account .details-order-itens{
+  border-bottom: 0;
+}
+
+.my-account .details-order-itens,
+.my-account .order-details .buttons-set{
+  border-top: 0;
+}
+
+.my-account .details-order-itens{
+  padding: 0 2%;
+}
+
+.my-account .order-details .buttons-set{
+  padding: 0 2% 20px 2%;
+}
+
+.my-account .order-details .buttons-set .back-link{
+  float: right;
+  position: relative;
+}
+
+.sales-order-view .details-order .order-date{
+  float: right;
+  margin-top: -25px;
+}
+
+.sales-order-view .order-items #my-orders-table thead tr th{
+  padding: 5px;
+}
+
+.sales-order-view .order-items #my-orders-table tbody tr td{
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 5px;
+}
+
+.sales-order-view .order-items #my-orders-table tr td .price{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.sales-order-view .order-items #my-orders-table .item-options{
+  float: left;
+}
+
+.sales-order-view .order-items #my-orders-table .item-options dt{
+  float: left;
+  clear: both;
+}
+
+.sales-order-view .order-items #my-orders-table .item-options dd{
+  float: left;
+}
+
+.sales-order-view .order-items #my-orders-table-foot{
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sales-order-view .order-items #my-orders-table tfoot tr td{
+  padding: 10px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.sales-order-view .order-items #my-orders-table tfoot tr td .price{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CHECKOUT SUCCESS
+|--------------------------------------------------------------------------
+*/
+
+.checkout-index-success .main-container .main .col-main,
+.checkouttester-index-success .main-container .main .col-main{
+  min-height: 400px;
+}
+
+.checkout-index-success h2,
+.checkouttester-index-success h2{
+  float: left;
+  width: 100%;
+  color: #C0004E;
+  font-family: "YanoneKaffeesatzRegular" !important;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+
+.checkout-index-success p,
+.checkouttester-index-success p{
+  float: left;
+  width: 100%;
+  margin: 0;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 19px;
+  color: #000;
+}
+
+.checkout-index-success .sidebar,
+.checkouttester-index-success .sidebar,
+.checkout-index-success .buttons-set,
+.checkouttester-index-success .buttons-set{
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| OCULTOS
+|--------------------------------------------------------------------------
+*/
+
+#fb-root + iframe{
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| MODAL PHILLIPE STARCK
+|--------------------------------------------------------------------------
+*/
+
+
+.modal-phillipe-starck{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  background: rgba(0,0,0,.5);
+}
+
+.modal-phillipe-starck .content{
+  position: absolute;
+  width: 1112px;
+  height: 512px;
+  left: 50%;
+  top: 50%;
+  margin: -256px 0 0 -556px;
+}
+
+.modal-phillipe-starck .content .close{
+  position: absolute;;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 21px;
+  cursor: pointer;
+  background: url("https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/home/icon-close-modal-home-phillipe-starck.jpg") left top;
+}
+
+/*
+|--------------------------------------------------------------------------
+| RESPONSIVO
+|--------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1240px){
+
+  #zoom1 {
+    max-width: 95%;
+    left: 10px;
+    right: 10px;
+  }
+
+  #zoom1 img {
+    width: 100% !important;
+    height: 344px !important;
+    left: 25px !important;
+    right: 20px;
+    top: 0px !important;
+  }
+
+  button.Next { 
+    right: -40px;
+  }
+
+  button.Prev { 
+    left: -40px;
+  }
+
+  .product-view .product-essential form .product-shop {
+    width: 40%;
+    margin-left: 65px
+  }
+
+  .product-view .product-essential form .produto-imagem {
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 40%;
+  }
+
+  #header #header-conteudo{
+    height: 124px;
+  }
+
+  #header #header-conteudo .direita .busca-banner{
+    float: right;
+    clear: both;
+    margin: 0 0 10px 0;
+  }
+
+  #header #header-conteudo .direita .busca{
+    margin: 5px 0 0 0px;
+  }
+
+  #header #header-conteudo .direita .menu-site{
+    margin: 5px -10px 0 0;
+  }
+
+  #header #header-conteudo .direita #banner-frete-gratis{
+    margin: 7px 0 0 10px;
+  }
+
+  .products-grid li{ min-height: 290px; }
+
+}
+
+@media screen and (max-width: 925px){
+
+  .product-view .product-essential form .product-shop .row-product .add-to-links{
+    margin-bottom: -20px;
+  }
+
+  .product-view .product-essential form .product-shop .row-product .add-to-links li{
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
+
+  .product-view #image-size-chart{
+    width: 96%;
+    margin-left: 2%;
+    left: 0;
+    height: auto;
+  }
+
+  .attribute-filter{ marign-right: 20px; }
+
+}
+
+@media screen and (max-width: 900px){
+
+  .products-grid li{
+    float: left;
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+  }
+
+  .product-view .product-essential form .product-shop #product-options-wrapper .fancy-selector .viewChartSizeBox{
+    float: left;
+    clear: both;
+    margin: 20px 0 0 0;
+  }
+
+  .product-view .viewChartSizesListContent img{
+    position: absolute;
+    width: 96%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .product-view .viewChartSizesListContent .close{
+    top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 830px){
+
+  body{
+    padding-top: 41px;
+  }
+
+  #header{
+    display: none;
+  }
+
+  .header-responsivo{
+    display: block;
+  }
+
+  .top-header{
+    display: none;
+  }
+
+  .mini-header {
+    height: 50px;
+    background: url("//ipanema-usa.s3.amazonaws.com/header/banner-top-free-shipping-mobile.png") no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+  }
+
+  .catalog-product-view .main-container{
+    position: relative;
+    z-index: 1001;
+  }
+
+  #banner-home,
+  .main-container{
+    position: relative;
+    z-index: 1000;
+  }
+
+  aside#filters{
+    display: none;
+  }
+
+  .cms-index-index .main-container .main .std,
+  .cms-universalteam .main-container .main .std,
+  .catalog-category-view .main-container .main .std,
+  body.catalog-category-view .category-products{
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  body.catalog-category-view .toolbar{
+    padding: 0;
+  }
+
+  .products-grid{
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+}
+
+@media screen and (max-width: 815px){
+
+  #header #header-conteudo .direita .menu-shop,
+  #header #header-conteudo .direita .menu-site{
+    display: none;
+  }
+
+  #header #header-conteudo .direita .busca-banner{
+    margin: 60px 0 10px;
+  }
+
+  #header #dl-menu{
+    display: block;
+  }
+
+  .col2-left-layout .main .col-left{
+    display: none;
+  }
+
+  .my-account .dashboard,
+  .my-account #form-validate,
+  .my-account .addresses-list,
+  .my-account .billing-agreements,
+  .my-account .recurring-profiles,
+  .my-account .my-product-review,
+  .my-account .my-tags,
+  .my-account .my-wishlist,
+  .my-account .my-orders,
+  .my-account .details-order,
+  .my-account .details-order-itens,
+  .my-account .order-details .buttons-set{
+    width: 95.5%;
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+  .cart form fieldset .radius-cart table thead tr th.edit,
+  .cart form fieldset .radius-cart table tbody tr td.edit{
+    display: none;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.qty,
+  .cart form fieldset .radius-cart table tbody tr td.qty{
+    width: 22%;
+  }
+
+  .cart .cart-collaterals .col2-set{
+    width: 100%;
+  }
+
+  .cart .cart-collaterals .col2-set .col-1,
+  .cart .cart-collaterals .col2-set .col-2{
+    width: 48%;
+  }
+
+  .cart .cart-collaterals .col2-set .col-2{
+    margin: 0;
+  }
+
+  .cart .cart-collaterals .totals{
+    float: right;
+    width: 42%;
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  #zoom1 {
+    max-width: 95%;
+    left: 10px;
+    right: 10px;
+  }
+
+  #zoom1 img {
+    width: 100% !important;
+    height: 344px !important;
+    left: 25px !important;
+    right: 20px;
+    top: 0px !important;
+  }
+
+  button.Next { 
+    right: -40px;
+  }
+
+  button.Prev { 
+    left: -40px;
+  }
+
+  .product-view .product-essential form .product-shop .product-options-bottom .add-to-cart .qty-wrapper{
+    margin-right: 0;
+    float: right;
+  }
+
+  .product-view .product-essential form .product-shop .product-options-bottom .btn-cart{
+    clear: both;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.price-unit,
+  .cart form fieldset .radius-cart table tbody tr td.price-unit,
+  .cart form fieldset .radius-cart table thead tr th.subtotal,
+  .cart form fieldset .radius-cart table tbody tr td.subtotal{
+    width: 15%;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.qty,
+  .cart form fieldset .radius-cart table tbody tr td.qty{
+    width: 12%;
+  }
+
+  .cart form fieldset .radius-cart table tbody tr td.qty .qty-wrapper{
+    width: 48px;
+    margin-left: -24px;
+  }
+
+  .cart form fieldset .radius-cart table tbody tr td.qty .increase,
+  .cart form fieldset .radius-cart table tbody tr td.qty .decrease{
+    display: none;
+  }
+
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns{
+    border: 0;
+  }
+
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left,
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle,
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-right{
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-left,
+  .onestepcheckout-index-index #onestepcheckout-form .onestepcheckout-threecolumns .onestepcheckout-column-middle{
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 2px dotted #CFCFCF;
+  }
+
+  #banner-home,
+  #banner-home ul li,
+  #banner-home ul li a{
+    height: 300px;
+  }
+
+  #banner-home ul li{
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-view .product-essential form .product-shop {
+    width: 40%;
+    margin-left: 45px
+  }
+
+  .product-view .product-essential form .produto-imagem {
+    margin-right: 3%;
+    margin-left: 3.5%;
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 740px){
+
+  #header #header-conteudo .direita .busca{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 650px){
+
+  .products-grid li{
+    float: left;
+    width: calc(50% - 30px);
+    box-sizing: border-box;
+    margin: 0 15px;
+  }
+
+  button.Next {
+    right: 0;
+  }
+
+  button.Prev {
+    left: 0;
+  }
+
+  .product-view .product-essential form .product-shop {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .product-view .product-essential form .product-name {
+    padding-left: 0px;
+  }
+
+  .product-view .product-essential form .produto-imagem {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #zoom1 img {
+    margin-bottom: 20px;
+    transform: scale(1);
+  }
+
+  .product-view .product-essential form .product-img-box .zoom-inner .product-image {
+    margin-bottom: 0;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.price-unit,
+  .cart form fieldset .radius-cart table tbody tr td.price-unit{
+    display: none;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.description,
+  .cart form fieldset .radius-cart table tbody tr td.description{
+    width: 38%;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.image,
+  .cart form fieldset .radius-cart table tbody tr td.image{
+    width: 17%;
+  }
+
+}
+
+@media screen and (max-width: 720px){
+
+  #footer #footer-conteudo .esquerda .menu{
+    float: right;
+    margin: 0;
+    clear: none;
+    padding: 7px 0;
+  }
+
+  #footer #footer-conteudo .esquerda .menu li a{
+    margin: 0 15px 0 0;
+  }
+
+  #footer #footer-conteudo .esquerda{
+    width: 100%;
+  }
+
+  #footer #footer-conteudo .direita{
+    margin: 0;
+  }
+
+  #footer #footer-conteudo .direita .newsletter p,
+  #footer #footer-conteudo .direita .newsletter form{
+    display: inline-block;
+    float: none;
+  }
+
+  #footer #footer-conteudo .direita .newsletter{
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer #footer-conteudo .direita .logo{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 610px){
+
+  .product-view .product-essential form .product-name{
+    text-align: center;
+  }
+
+  .product-view .product-essential form .product-name .line{
+    top: 50%;
+    margin-top: -1px;
+  }
+
+  .product-view .product-essential .new-img-product{
+    top: -72px;
+  }
+
+  .product-view .product-essential form .product-name h1{
+    float: none;
+    padding: 0 2%;
+    width: auto;
+  }
+
+  .product-view .product-essential form .produto-imagem{
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-view .product-essential form .product-shop{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  #footer #footer-conteudo .esquerda .menu li a{
+    margin: 0 10px 0 0;
+  }
+
+}
+
+@media screen and (max-width: 515px){
+
+  .my-account .box-account #my-orders-table th.name,
+  .my-account .box-account #my-orders-table td.name{
+    display: none;
+  }
+
+  .sales-order-view .my-account .box-account #my-orders-table th.name,
+  .sales-order-view .my-account .box-account #my-orders-table td.name{
+    display: table-cell;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+
+  .product-view .product-collateral #tabs_select_chosen,
+  .product-view .product-collateral #tabs-select{
+    display: block;
+  }
+
+  .product-view .padder #product_tabs_description_tabbed_contents{
+    border: 0 !important;
+  }
+
+  .product-view .product-collateral .tabs{
+    display: none;
+  }
+
+  .cart .cart-collaterals .col2-set .col-1,
+  .cart .cart-collaterals .col2-set .col-2{
+    width: 100%;
+    margin: 0;
+  }
+
+  .cart .cart-collaterals .col2-set .col-2{
+    margin-top: 30px;
+  }
+
+  .cart .cart-collaterals .totals{
+    float: left;
+    width: 94%;
+  }
+
+  .account-login #login-form .col2-set .new-users,
+  .account-login #login-form .col2-set .registered-users{
+    width: 95.4%;
+  }
+
+  .account-login #login-form .col2-set .registered-users{
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 553px){
+
+  #header #header-conteudo .direita{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #header #header-conteudo .direita .busca-banner{
+    float: none;
+    margin: 0;
+  }
+
+  #header #header-conteudo .direita #banner-frete-gratis{
+    float: none;
+    margin: 20px 0 15px 0;
+  }
+
+  #footer #footer-conteudo .esquerda .menu{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  #footer #footer-conteudo .esquerda .menu li{
+    float: none;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  #footer #footer-conteudo .direita .newsletter p{
+    margin-bottom: 10px;
+  }
+
+  #footer #footer-conteudo .esquerda .menu li,
+  #footer #footer-conteudo .esquerda .menu li a{
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer #footer-conteudo .esquerda .menu li{
+    margin-bottom: 10px;
+  }
+
+  #footer #footer-conteudo .esquerda .redes-sociais{
+    width: 100%;
+  }
+
+  #footer #footer-conteudo .esquerda .redes-sociais ul{
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer #footer-conteudo .esquerda .redes-sociais ul li{
+    float: none;
+    display: inline-block;
+    margin-bottom: -6px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  .my-account .box-account #my-orders-table th.sku,
+  .my-account .box-account #my-orders-table td.sku{
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 455px){
+
+  .my-account .box-account #my-orders-table th.price,
+  .my-account .box-account #my-orders-table td.price{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .cart form fieldset .radius-cart table thead tr th.image,
+  .cart form fieldset .radius-cart table tbody tr td.image{
+    display: none;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.description,
+  .cart form fieldset .radius-cart table tbody tr td.description{
+    width: 45%;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.subtotal,
+  .cart form fieldset .radius-cart table tbody tr td.subtotal{
+    width: 22%;
+  }
+
+  .cart form fieldset .radius-cart table thead tr th.qty,
+  .cart form fieldset .radius-cart table tbody tr td.qty{
+    width: 15%;
+  }
+
+  .my-account .box-account .col2-set .col-1,
+  .my-account .box-account .col2-set .col-1{
+    width: 100%;
+  }
+
+  .my-account .box-account .col2-set .col-2,
+  .my-account .box-account .col2-set .col-2{
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+
+  .my-account .addresses-list .col-1 ol li,
+  .my-account .addresses-list .col-2 ol li{
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+
+}
+
+@media screen and (max-width: 420px){
+
+  .my-account .box-account #my-orders-table th.status,
+  .my-account .box-account #my-orders-table td.status{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+
+  .page-title h1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+}
+
+@media screen and (max-width: 350px){
+
+  .cart form fieldset .radius-cart table tfoot tr td button.btn-continue{
+    display: none;
+  }
+
+  form .fieldset .form-list li .field,
+  form .fieldset .form-list li.fields .field{
+    width: 98%;
+  }
+
+  .my-account .box-account #my-orders-table td.last a{
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+
+}
+
+/* ===== TODO MERGE MEDIA QUERIES ===== */
+@media only screen and (min-width: 768px) and (max-width: 995px){
+
+  .block-layered-nav .attribute-filter .chosen-container{ clear: both; }
+  .block-layered-nav .attribute-filter .item-title{ min-width: 60px; }
+
+  .block-layered-nav .clear-all-filters{ margin-top: 32px; }
+
+}
+
+@media only screen and (max-width: 995px){
+
+  .block-layered-nav .attribute-filter,
+  .block-layered-nav .clear-all-filters{  }
+
+  .block-layered-nav .clear-all-filters{ margin-top: 32px; }
+
+  .clear-all-filters input[type="button"]{ min-width: inherit; }
+
+  .block-layered-nav .attribute-filter .chosen-container{ clear: both; }
+  .block-layered-nav .attribute-filter .item-title{ min-width: 60px; }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 685px){
+  .clear-all-filters, .block-layered-nav .attribute-filter{
+    margin: 0 2% 10px!important;
+    width: 21%!important;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+  .block-layered-nav .attribute-filter{ min-height: 110px; }
+  .clear-all-filters, .block-layered-nav .attribute-filter{
+    margin: 0 2% 10px!important;
+    width: 46%!important;
+  }
+
+  .block-layered-nav .attribute-filter.msg-filter{ min-height: inherit; line-height: 96px; }
+  .block-layered-nav .clear-all-filters{ margin-top: 32px; line-height: 96px; }
+}
+
+
+.attribute-filter-all-filters:after,
+.home-filters-container:after{
+  display: block;
+  content: ".";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#filters{
+  float: left;
+  margin: 5px 30px 0 71px;
+  width: 253px;
+}
+
+#filters h3{
+  margin-bottom: 21px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#filters h4{
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+#filters input{
+  display: block !important;
+  float: left;
+  clear: both;
+  margin: 2px 5px 10px 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#filters label{
+  display: block;
+  float: left;
+  font-size: 14px;
+  margin-left: 2px;
+  padding-left: 5px;
+}
+
+#filters input[type="radio"] + label::before,
+#filters input[type="checkbox"] + label::before{
+  top: 0;
+}
+
+#filters input[type="radio"] + label::after,
+#filters input[type="checkbox"] + label::after{
+  top: 5px;
+}
+
+#filters fieldset > div{
+  clear: both;
+  margin: 25px 0;
+  border-top: 1px dotted #b8b8b8;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+#filters legend{
+  display: none;
+}
+
+#filters .More{
+  clear: both;
+}
+
+#filters .More::before{
+  content: '+ See All';
+  cursor: pointer;
+}
+
+#filters .More.Active::before{
+  display: none;
+}
+
+#filters .More::first-letter{
+  color: #92013a;
+}
+
+#filters .More *{
+  display: none;
+}
+
+#filters .styledRadio,
+#filters .styledCheckbox{
+  clear: both;
+  float: left;
+  margin: 0 5px 10px 0;
+}
+
+#filters .loading{
+  float: left;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000;
+  width: 10px;
+  height: 10px;
+  margin: 2px 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+}
+
+#filters .loading.active{
+  opacity: 1;
+}
+
+#filters .remove{
+  float: left;
+  cursor: pointer;
+  margin: 0px 0 0 5px;
+}
+
+.cms-index-index .main-container,
+.cms-universalteam .main-container,
+.catalog-category-view .main-container{
+  width: 100%;
+  padding: 0;
+}
+
+.cms-index-index .main-container .main,
+.cms-universalteam .main-container .main,
+.catalog-category-view .main-container .main{
+  max-width: 100%;
+}
+
+.cms-index-index .main-container .main .std,
+.cms-universalteam .main-container .main .std,
+.catalog-category-view .main-container .main .std{
+  float: left;
+  width: calc(100% - 354px);
+  margin-top: -5px;
+}
+
+@-webkit-keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pulse{
+  50%{
+    background: #FFFFFF;
+  }
+}
+@keyframes pulse{
+  50%{
+    background: #FFFFFF;
+  }
+}
+
+.loading{
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  -webkit-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+.catalog-product-view .main-container{
+  padding: 30px 2% 0 2%;
+}
+
+.cms-universalteam .team-member-infos{
+  width: 100%;
+  margin: 0;
+  background: white;
+  overflow-x: hidden;
+}
+
+.cms-universalteam .team-member-infos img{
+  position: relative;
+  top: 0;
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.cms-universalteam .team-member-infos .text p{
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #151515;
+  text-align: center;
+  max-width: 1073px;
+  width: 100%;
+  margin: 30px auto 0 auto;
+}
+
+.cms-universalteam .team-member-infos .text p span{
+  color: #cc0066;
+}
+
+.cms-universalteam .team-member-infos .banner-pink{
+  width: 752px;
+  height: 153px;
+  background-color: #cc0066;
+  width: 100%;
+  max-width: 752px;
+  margin: 0 auto;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 30px 22px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 94px auto 33px auto;
+}
+
+.cms-universalteam .team-member-infos .banner-pink span{
+  color: #010001;
+}
+
+.cms-universalteam .team-member-infos .code{
+  width: 536px;
+  height: 80px;
+  font-family: "YanoneKaffeesatzRegular";
+  font-weight: 400;
+  line-height: 44px;
+  color: #010001;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: none;
+}
+
+.cms-universalteam .team-member-infos .code span{
+  color: #cc0066;
+}
+
+.cms-universalteam .team-member-infos .code small{
+  color: #020001;
+  font-size: 26px;
+  display: block;
+}
+
+.cms-universalteam .team-member-infos small.obs{
+  margin: 0 auto 50px auto;
+  max-width: 424px;
+  width: 100%;
+  color: #1c1910;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 69px;
+  display: block;
+  text-align: center;
+}
+
+.cms-universalteam #fundo-modal-newsletter,
+.cms-universalteam #conteudo-modal-newsletter{
+  display: none !important;
+}
+
+#formulario-newsletter-modal label {
+  display: block;
+  text-align: left;
+  margin: 4px 0;
+}
+
+#formulario-newsletter-modal label input {
+  opacity: 1;
+}
+
+#formulario-newsletter-modal div.form-wrapper {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.checkbox-terms input[type="checkbox"] {
+  margin: 0;
+}
+
+.styledRadio,
+.styledCheckbox{
+  float: left;
+  margin-right: 5px;
+}
+
+.styledRadio input,
+.styledCheckbox input{
+  display: inline-block !important;
+  opacity: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  opacity: 0;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label{
+  position: relative;
+  padding-right: 5px;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before{
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: -2px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #CFCFCF;
+}
+
+input[type="radio"] + label::before{
+  border-radius: 100%;
+}
+
+input[type="radio"] + label::after{
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  background: #C0004E;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label::after{
+  opacity: 1;
+}
+
+input[type="checkbox"] + label::after{
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 3px;
+  width: 8px;
+  height: 7px;
+  background: url("/shop/skin/frontend/default/ipanema/images/inputs/checked.jpg");
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label::after{
+  opacity: 1;
+}
+
+
+.alert-warehouse-closed{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.97);
+  z-index: 9000;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.alert-warehouse-closed.close{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert-warehouse-closed .content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 755px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+
+.alert-warehouse-closed .content p{
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "YanoneKaffeesatzRegular";
+}
+
+.alert-warehouse-closed .content p.date{
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #323232;
+  margin: 10px 0 30px 0;
+}
+
+.alert-warehouse-closed .content .buttons{
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 30px 0 0 0;
+}
+
+.alert-warehouse-closed .content .buttons button{
+  width: 100%;
+  font-family: "YanoneKaffeesatzRegular";
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+.alert-warehouse-closed .content .buttons button.understand{
+  color: white;
+  background: #cd165b;
+  border: 1px solid #cd165b;
+}
+
+.alert-warehouse-closed .content .buttons button.back{
+  color: #323232;
+  border: 1px solid #323232;
+  background: white;
+  margin-top: 15px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| TOP HEADER
+|--------------------------------------------------------------------------
+*/
+
+.top-header{
+  float: left;
+  width: 100%;
+  height: 42px;
+  background: #000;
+  position: relative;
+  z-index: 1000;
+}
+
+.top-header .center{
+  margin: 0 auto;
+  width: 1173px;
+}
+
+.top-header .logo-grendene{
+  float: left;
+}
+
+.top-header .logo-grendene img{
+  float: left;
+  height: 100%;
+}
+
+.top-header ul{
+  float: right;
+}
+
+.top-header ul li{
+  float: left;
+}
+
+.top-header ul li a{
+  float: left;
+  margin-left: 20px;
+}
+
+.top-header ul li:first-of-type a{
+  margin-left: 0;
+}
+
+.top-header ul li a img{
+  float: left;
+  height: 100%;
+}
+
+#rcode {
+  width: 100%;
+  margin:10px 0;
+  float: left;
+}
+
+#advice-required-entry-accepted_terms{
+  margin-top: 0px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HEADER MINI BANNER
+|--------------------------------------------------------------------------
+*/
+
+.mini-header {
+  float: left;
+  width: 100%;
+  height: 25px;
+  position: relative;
+  z-index: 1;
+  background: url("//ipanema-usa.s3.amazonaws.com/header/banner-top-free-shipping-desk.jpg") no-repeat;
+  background-position: 50% 0;
+}
+
+input#subscription:checked + label::before {
+  background: #D1175E;
+}
+.widget{display:inline}.sidebar .widget-static-block,.widget-compared,.widget-new-products,.widget-viewed{display:block}.widget .widget-title{clear:both;padding:15px 0 0;margin:0 0 7px}.widget .widget-title h2{font-size:15px;font-weight:700;color:#e25203}.sidebar .widget-compared .block,.sidebar .widget-new-products .block,.sidebar .widget-viewed .block{font-size:11px;line-height:1.25}.widget .mini-products-images-list .product-image{display:block;width:76px;height:76px;border:1px solid #a9a9a9;margin:0 auto}.widget .mini-products-images-list li.item{float:left;width:77px;height:77px}.widget-compared .products-grid .product-image,.widget-compared .products-list .product-image,.widget-new-products .products-grid .product-image,.widget-new-products .products-list .product-image,.widget-viewed .products-grid .product-image,.widget-viewed .products-list .product-image{width:85px;height:85px}.col-main .widget-new-products{margin:7px 0}.widget-new-products .products-list .product-shop{margin-left:100px}.sidebar .widget-new-products .block-title strong{background:url(https://ipanemausa.com/shop/skin/frontend/base/default/images/widgets/i_widget-new.gif) 0 1px no-repeat;padding-left:21px;color:#dc5033}.sidebar .widget-compared .block-title strong,.sidebar .widget-viewed .block-title strong{background:url(https://ipanemausa.com/shop/skin/frontend/base/default/images/widgets/i_block-list.gif) no-repeat;padding-left:21px}.col-main .widget-viewed{margin:7px 0}.widget-viewed .products-list .product-shop{margin-left:100px}.col-main .widget-compared{margin:7px 0}.widget-compared .products-list .product-shop{margin-left:100px}.col-main .widget-category-link a,.col-main .widget-cms-link a,.col-main .widget-product-link a,.sidebar .widget-category-link a,.sidebar .widget-cms-link a,.sidebar .widget-product-link a{background:url(https://ipanemausa.com/shop/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat}.sidebar .widget-static-block{margin:0 0 15px}.top-container .widget a{padding:0 0 0 7px}.bottom-container .widget a{padding:0 3px}.widget-product-link-inline{display:inline}.col-main .widget-product-link{display:block;text-align:right;margin:7px 0}.col-main .widget-product-link a{padding-right:15px}.sidebar .widget-product-link{display:block;margin:0 0 15px;padding:0 10px}.sidebar .widget-product-link a{padding:0 15px 0 0}.widget-category-link-inline{display:inline}.col-main .widget-category-link{display:block;text-align:right;margin:7px 0}.col-main .widget-category-link a{padding-right:15px}.sidebar .widget-category-link{display:block;margin:0 0 15px;padding:0 10px}.sidebar .widget-category-link a{padding:0 15px 0 0}.widget-cms-link-inline{display:inline}.col-main .widget-cms-link{display:block;text-align:right;margin:7px 0}.col-main .widget-cms-link a{padding-right:15px}.sidebar .widget-cms-link{display:block;margin:0 0 15px;padding:0 10px}.sidebar .widget-cms-link a{padding:0 15px 0 0}
+div.pp_default .pp_bottom,div.pp_default .pp_bottom .pp_left,div.pp_default .pp_bottom .pp_middle,div.pp_default .pp_bottom .pp_right,div.pp_default .pp_top,div.pp_default .pp_top .pp_left,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top .pp_right{height:13px}div.pp_default .pp_top .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -78px -93px no-repeat}div.pp_default .pp_top .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_x.png) top left repeat-x}div.pp_default .pp_top .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -112px -93px no-repeat}div.pp_default .pp_content .ppt{color:#f8f8f8}div.light_rounded #pp_full_res .pp_inline,div.light_rounded .pp_content .ppt,div.pp_default #pp_full_res .pp_inline{color:#000}div.pp_default .pp_content_container .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y;padding-left:13px}div.pp_default .pp_content_container .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_y.png) top right repeat-y;padding-right:13px}div.pp_default .pp_content{background-color:#fff}div.pp_default .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_next.png) center right no-repeat;cursor:pointer}div.pp_default .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_prev.png) center left no-repeat;cursor:pointer}div.pp_default .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) 0 -29px no-repeat;cursor:pointer;width:28px;height:28px}div.pp_default .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) 0 -56px no-repeat;cursor:pointer}div.pp_default .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) 0 -84px no-repeat;cursor:pointer;width:28px;height:28px}div.pp_default .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) 0 -113px no-repeat;cursor:pointer}div.pp_default .pp_close{width:30px;height:30px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) 2px 1px no-repeat;cursor:pointer}div.pp_default .pp_gallery ul li a{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/default_thumb.png) center center #f8f8f8;border:1px solid #aaa}div.pp_default .pp_gallery ul li a:hover,div.pp_default .pp_gallery ul li.selected a{border-color:#fff}div.pp_default .pp_gallery a.pp_arrow_next,div.pp_default .pp_gallery a.pp_arrow_previous{position:static;left:auto}div.pp_default .pp_nav .pp_pause,div.pp_default .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -51px 1px no-repeat;height:30px;width:30px}div.pp_default .pp_nav .pp_pause{background-position:-51px -29px}div.pp_default .pp_details{position:relative}div.pp_default a.pp_arrow_next,div.pp_default a.pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -31px -3px no-repeat;height:20px;margin:4px 0 0;width:20px}div.pp_default a.pp_arrow_next{left:52px;background-position:-82px -3px}div.pp_default .pp_content_container .pp_details{margin-top:5px}div.pp_default .pp_nav{clear:none;height:30px;width:105px;position:relative}div.pp_default .pp_nav .currentTextHolder{font-family:Georgia;font-style:italic;font-color:#999;font-size:11px;left:75px;line-height:25px;margin:0;padding:0 0 0 10px;position:absolute;top:2px}div.dark_rounded .pp_details,div.dark_square .pp_details,div.facebook .pp_details,div.light_rounded .pp_details,div.light_square .pp_details{position:relative}div.pp_default .pp_arrow_next:hover,div.pp_default .pp_arrow_previous:hover,div.pp_default .pp_close:hover,div.pp_default .pp_nav .pp_pause:hover,div.pp_default .pp_nav .pp_play:hover{opacity:.7}div.pp_default .pp_description{font-size:11px;font-weight:700;line-height:14px;margin:5px 50px 5px 0}div.dark_rounded .pp_description,div.light_rounded .pp_description{margin-right:85px}div.dark_rounded .pp_gallery a.pp_arrow_next,div.dark_rounded .pp_gallery a.pp_arrow_previous,div.light_rounded .pp_gallery a.pp_arrow_next,div.light_rounded .pp_gallery a.pp_arrow_previous{margin-top:12px!important}div.pp_default .pp_bottom .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -78px -127px no-repeat}div.pp_default .pp_bottom .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite_x.png) bottom left repeat-x}div.pp_default .pp_bottom .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/sprite.png) -112px -127px no-repeat}div.pp_default .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/default/loader.gif) center center no-repeat}div.light_rounded .pp_top .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat}div.light_rounded .pp_top .pp_middle{background:#fff}div.light_rounded .pp_top .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat}div.light_rounded .pp_content_container .pp_left,div.light_rounded .pp_content_container .pp_right{background:#fff}div.light_rounded .pp_content{background-color:#fff}div.light_rounded .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/btnNext.png) center right no-repeat;cursor:pointer}div.light_rounded .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/btnPrevious.png) center left no-repeat;cursor:pointer}div.light_rounded .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -31px -26px no-repeat;cursor:pointer}div.light_rounded .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -31px -47px no-repeat;cursor:pointer}div.light_rounded .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) 0 -26px no-repeat;cursor:pointer}div.light_rounded .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) 0 -47px no-repeat;cursor:pointer}div.light_rounded .pp_close{width:75px;height:22px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -1px -1px no-repeat;cursor:pointer}div.light_rounded .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -1px -100px no-repeat;height:15px;width:14px}div.light_rounded .pp_nav .pp_pause{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -24px -100px no-repeat;height:15px;width:14px}div.light_rounded .pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) 0 -71px no-repeat}div.light_rounded .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}div.light_rounded .pp_arrow_next{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -22px -71px no-repeat}div.light_rounded .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}div.light_rounded .pp_bottom .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -88px -80px no-repeat}div.light_rounded .pp_bottom .pp_middle{background:#fff}div.light_rounded .pp_bottom .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/sprite.png) -110px -80px no-repeat}div.light_rounded .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/loader.gif) center center no-repeat}div.dark_rounded .pp_top .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat}div.dark_rounded .pp_top .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/contentPattern.png) top left}div.dark_rounded .pp_top .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat}div.dark_rounded .pp_content_container .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat-y}div.dark_rounded .pp_content_container .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/contentPattern.png) top right repeat-y}div.dark_rounded .pp_content{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/contentPattern.png) top left}div.dark_rounded .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/btnNext.png) center right no-repeat;cursor:pointer}div.dark_rounded .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/btnPrevious.png) center left no-repeat;cursor:pointer}div.dark_rounded .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -31px -26px no-repeat;cursor:pointer}div.dark_rounded .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -31px -47px no-repeat;cursor:pointer}div.dark_rounded .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) 0 -26px no-repeat;cursor:pointer}div.dark_rounded .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) 0 -47px no-repeat;cursor:pointer}div.dark_rounded .pp_close{width:75px;height:22px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -1px -1px no-repeat;cursor:pointer}div.dark_rounded .currentTextHolder{color:#c4c4c4}div.dark_rounded #pp_full_res .pp_inline,div.dark_rounded .pp_description{color:#fff}div.dark_rounded .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -1px -100px no-repeat;height:15px;width:14px}div.dark_rounded .pp_nav .pp_pause{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -24px -100px no-repeat;height:15px;width:14px}div.dark_rounded .pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) 0 -71px no-repeat}div.dark_rounded .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}div.dark_rounded .pp_arrow_next{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -22px -71px no-repeat}div.dark_rounded .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}div.dark_rounded .pp_bottom .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -88px -80px no-repeat}div.dark_rounded .pp_bottom .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/contentPattern.png) top left}div.dark_rounded .pp_bottom .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/sprite.png) -110px -80px no-repeat}div.dark_rounded .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_rounded/loader.gif) center center no-repeat}div.dark_square .pp_content,div.dark_square .pp_left,div.dark_square .pp_middle,div.dark_square .pp_right{background:#000}div.dark_square .currentTextHolder{color:#c4c4c4}div.dark_square .pp_description{color:#fff;margin:0 85px 0 0}div.dark_square .pp_gallery a.pp_arrow_next,div.dark_square .pp_gallery a.pp_arrow_previous,div.light_square .pp_gallery a.pp_arrow_next,div.light_square .pp_gallery a.pp_arrow_previous{margin-top:12px!important}div.dark_square .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/loader.gif) center center no-repeat}div.dark_square .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -31px -26px no-repeat;cursor:pointer}div.dark_square .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat;cursor:pointer}div.dark_square .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat;cursor:pointer}div.dark_square .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) 0 -47px no-repeat;cursor:pointer}div.dark_square .pp_close{width:75px;height:22px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -1px -1px no-repeat;cursor:pointer}div.dark_square #pp_full_res .pp_inline{color:#fff}div.facebook #pp_full_res .pp_inline,div.facebook .pp_content .ppt,div.light_square #pp_full_res .pp_inline,div.light_square .pp_content .ppt{color:#000}div.dark_square .pp_nav{clear:none}div.dark_square .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -1px -100px no-repeat;height:15px;width:14px}div.dark_square .pp_nav .pp_pause{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -24px -100px no-repeat;height:15px;width:14px}div.dark_square .pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) 0 -71px no-repeat}div.dark_square .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}div.dark_square .pp_arrow_next{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat}div.dark_square .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}div.dark_square .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/btnNext.png) center right no-repeat;cursor:pointer}div.dark_square .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat;cursor:pointer}div.light_square .pp_content,div.light_square .pp_left,div.light_square .pp_middle,div.light_square .pp_right{background:#fff}div.light_square .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat;cursor:pointer}div.light_square .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat;cursor:pointer}div.light_square .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) 0 -26px no-repeat;cursor:pointer}div.light_square .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) 0 -47px no-repeat;cursor:pointer}div.light_square .pp_close{width:75px;height:22px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat;cursor:pointer}div.light_square .pp_description{margin-right:85px}div.light_square .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -1px -100px no-repeat;height:15px;width:14px}div.light_square .pp_nav .pp_pause{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -24px -100px no-repeat;height:15px;width:14px}div.light_square .pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat}div.light_square .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}div.light_square .pp_arrow_next{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat}div.light_square .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}div.light_square .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/btnNext.png) center right no-repeat;cursor:pointer}div.light_square .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_square/btnPrevious.png) center left no-repeat;cursor:pointer}div.light_square .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/loader.gif) center center no-repeat}div.facebook .pp_top .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat}div.facebook .pp_top .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x}div.facebook .pp_top .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat}div.facebook .pp_content_container .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y}div.facebook .pp_content_container .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y}div.facebook .pp_content{background:#fff}div.facebook .pp_expand{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;cursor:pointer}div.facebook .pp_expand:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;cursor:pointer}div.facebook .pp_contract{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;cursor:pointer}div.facebook .pp_contract:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;cursor:pointer}div.facebook .pp_close{width:22px;height:22px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;cursor:pointer}div.facebook .pp_description{margin:0 37px 0 0;display:none!important}div.facebook .pp_loaderIcon{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/loader.gif) center center no-repeat}div.facebook .pp_arrow_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;height:22px;margin-top:0;width:22px}div.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default}div.facebook .pp_arrow_next{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;height:22px;margin-top:0;width:22px}div.facebook .pp_arrow_next.disabled{background-position:-32px -96px;cursor:default}div.facebook .pp_nav{margin-top:0}div.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px}div.facebook .pp_nav .pp_play{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;height:22px;width:22px}div.facebook .pp_nav .pp_pause{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;height:22px;width:22px}div.facebook .pp_next:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/btnNext.png) center right no-repeat;cursor:pointer}div.facebook .pp_previous:hover{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;cursor:pointer}div.facebook .pp_bottom .pp_left{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat}div.facebook .pp_bottom .pp_middle{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x}div.facebook .pp_bottom .pp_right{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat}div.pp_pic_holder a:focus{outline:0}div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}.pp_top{height:20px;position:relative}* html .pp_top{padding:0 20px}.pp_top .pp_left{height:20px;left:0;position:absolute;width:20px}.pp_top .pp_middle{height:20px;left:20px;position:absolute;right:20px}* html .pp_top .pp_middle{left:0;position:static}.pp_top .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}.pp_content{height:40px;min-width:40px}* html .pp_content{width:40px}.pp_fade{display:none}.pp_content_container{position:relative;text-align:left;width:100%}.pp_content_container .pp_left{padding-left:20px}.pp_content_container .pp_right{padding-right:20px}.pp_content_container .pp_details{float:left;margin:10px 0 2px}.pp_description,.pp_social{margin:0;display:none}.pp_social{float:left}.pp_social .facebook{float:left;position:relative;top:-1px;margin-left:5px;width:55px;overflow:hidden}.pp_social .twitter{float:left}.pp_nav{clear:right;float:left;margin:3px 10px 0 0}.pp_nav p{float:left;margin:2px 4px}.pp_nav .pp_pause,.pp_nav .pp_play{float:left;margin-right:4px;text-indent:-10000px}a.pp_arrow_next,a.pp_arrow_previous{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}.pp_gallery div,.pp_gallery ul{position:relative;float:left}.pp_gallery ul{height:50px;margin:-20px 0 0 5px;padding:0;white-space:nowrap}.pp_gallery ul a{border:1px solid #000;border:1px solid rgba(0,0,0,.5);display:block;float:left;height:50px;overflow:hidden;background:#fff}.pp_gallery li.selected a,.pp_gallery ul a:hover{border-color:#fff}.pp_gallery ul a img{border:0}.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}.pp_gallery li.default a{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/facebook/default_thumbnail.gif) no-repeat;display:block;height:33px;width:50px}.pp_gallery li.default a img{display:none}a.pp_next,a.pp_previous{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;height:100%;width:49%;text-indent:-10000px}.pp_gallery .pp_arrow_next,.pp_gallery .pp_arrow_previous{margin-top:7px!important}a.pp_next{float:right}a.pp_previous{float:left}a.pp_contract,a.pp_expand{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}.pp_bottom{height:20px;position:relative}* html .pp_bottom{padding:0 20px}.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}* html .pp_bottom .pp_middle{left:0;position:static}.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}.pp_loaderIcon{display:block;height:24px;left:50%;margin:-12px 0 0 -12px;position:absolute;top:50%;width:24px}#pp_full_res{line-height:1!important}#pp_full_res .pp_inline{text-align:left}#pp_full_res .pp_inline p{margin:0 0 15px}div.ppt{color:#fff;display:none!important;font-size:17px;margin:0 0 5px 15px;z-index:9999}
+.chosen-container{position:relative;display:inline-block;vertical-align:middle;font-size:13px;zoom:1;-webkit-user-select:none;-moz-user-select:none;user-select:none}.chosen-container .chosen-drop{position:absolute;top:100%;left:-9999px;z-index:1010;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;border:1px solid #aaa;border-top:0;background:#fff;box-shadow:0 4px 5px rgba(0,0,0,.15)}.chosen-container.chosen-with-drop .chosen-drop{left:0}.chosen-container a{cursor:pointer}.chosen-container-single .chosen-single{position:relative;display:block;overflow:hidden;padding:0 0 0 8px;height:23px;border:1px solid #aaa;border-radius:5px;background-color:#fff;background:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#fff),color-stop(50%,#f6f6f6),color-stop(52%,#eee),color-stop(100%,#f4f4f4));background:-webkit-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);background:-moz-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);background:-o-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);background:linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);background-clip:padding-box;box-shadow:0 0 3px #fff inset,0 1px 1px rgba(0,0,0,.1);color:#444;text-decoration:none;white-space:nowrap;line-height:24px}.chosen-container-single .chosen-default{color:#999}.chosen-container-single .chosen-single span{display:block;overflow:hidden;margin-right:26px;text-overflow:ellipsis;white-space:nowrap}.chosen-container-single .chosen-single-with-deselect span{margin-right:38px}.chosen-container-single .chosen-single abbr{position:absolute;top:6px;right:26px;display:block;width:12px;height:12px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -42px 1px no-repeat;font-size:1px}.chosen-container-single .chosen-single abbr:hover,.chosen-container-single.chosen-disabled .chosen-single abbr:hover{background-position:-42px -10px}.chosen-container-single .chosen-single div{position:absolute;top:0;right:0;display:block;width:18px;height:100%}.chosen-container-single .chosen-single div b{display:block;width:100%;height:100%;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 0 2px no-repeat}.chosen-container-single .chosen-search{position:relative;z-index:1010;margin:0;padding:3px 4px;white-space:nowrap}.chosen-container-single .chosen-search input[type=text]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:1px 0;padding:4px 20px 4px 5px;width:100%;height:auto;outline:0;border:1px solid #aaa;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat #fff;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat,-webkit-gradient(linear,50% 0,50% 100%,color-stop(1%,#eee),color-stop(15%,#fff));background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat,-webkit-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat,-moz-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat,-o-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) 100% -20px no-repeat,linear-gradient(#eee 1%,#fff 15%);font-size:1em;font-family:sans-serif;line-height:normal;border-radius:0}.chosen-container-single .chosen-drop{margin-top:-1px;border-radius:0 0 4px 4px;background-clip:padding-box}.chosen-container-single.chosen-container-single-nosearch .chosen-search{position:absolute;left:-9999px}.chosen-container .chosen-results{position:relative;overflow-x:hidden;overflow-y:auto;margin:0;padding:0 4px 5px;max-height:240px;-webkit-overflow-scrolling:touch;width:100%;clear:both;float:left;box-sizing:border-box}.chosen-container .chosen-results li{display:none;margin:0!important;padding:5px 6px;list-style:none;line-height:15px;box-sizing:border-box;width:100%}.chosen-container .chosen-results li.active-result{display:list-item;cursor:pointer}.chosen-container .chosen-results li.disabled-result{display:list-item;color:#ccc;cursor:default}.chosen-container .chosen-results li.highlighted{background-color:#3875d7;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#3875d7),color-stop(90%,#2a62bc));background-image:-webkit-linear-gradient(#3875d7 20%,#2a62bc 90%);background-image:-moz-linear-gradient(#3875d7 20%,#2a62bc 90%);background-image:-o-linear-gradient(#3875d7 20%,#2a62bc 90%);background-image:linear-gradient(#3875d7 20%,#2a62bc 90%);color:#fff}.chosen-container .chosen-results li.no-results{display:list-item;background:#f4f4f4}.chosen-container .chosen-results li.group-result{display:list-item;font-weight:700;cursor:default}.chosen-container .chosen-results li.group-option{padding-left:15px}.chosen-container .chosen-results li em{font-style:normal;text-decoration:underline}.chosen-container-multi .chosen-choices{position:relative;overflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;width:100%;height:auto!important;height:1%;border:1px solid #aaa;background-color:#fff;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(1%,#eee),color-stop(15%,#fff));background-image:-webkit-linear-gradient(#eee 1%,#fff 15%);background-image:-moz-linear-gradient(#eee 1%,#fff 15%);background-image:-o-linear-gradient(#eee 1%,#fff 15%);background-image:linear-gradient(#eee 1%,#fff 15%);cursor:text}.chosen-container-multi .chosen-choices li{float:left;list-style:none}.chosen-container-multi .chosen-choices li.search-field{margin:0;padding:0;white-space:nowrap}.chosen-container-multi .chosen-choices li.search-field input[type=text]{margin:1px 0;padding:5px;height:15px;outline:0;border:0!important;background:0 0!important;box-shadow:none;color:#666;font-size:100%;font-family:sans-serif;line-height:normal;border-radius:0}.chosen-container-multi .chosen-choices li.search-field .default{color:#999}.chosen-container-multi .chosen-choices li.search-choice{position:relative;margin:3px 0 3px 5px;padding:3px 20px 3px 5px;border:1px solid #aaa;border-radius:3px;background-color:#e4e4e4;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#f4f4f4),color-stop(50%,#f0f0f0),color-stop(52%,#e8e8e8),color-stop(100%,#eee));background-image:-webkit-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:-moz-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:-o-linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:linear-gradient(#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-clip:padding-box;box-shadow:0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05);color:#333;line-height:13px;cursor:default}.chosen-container-multi .chosen-choices li.search-choice .search-choice-close{position:absolute;top:4px;right:3px;display:block;width:12px;height:12px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -42px 1px no-repeat;font-size:1px}.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover{background-position:-42px -10px}.chosen-container-multi .chosen-choices li.search-choice-disabled{padding-right:5px;border:1px solid #ccc;background-color:#e4e4e4;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#f4f4f4),color-stop(50%,#f0f0f0),color-stop(52%,#e8e8e8),color-stop(100%,#eee));background-image:-webkit-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:-moz-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:-o-linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);background-image:linear-gradient(top,#f4f4f4 20%,#f0f0f0 50%,#e8e8e8 52%,#eee 100%);color:#666}.chosen-container-multi .chosen-choices li.search-choice-focus{background:#d4d4d4}.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close{background-position:-42px -10px}.chosen-container-multi .chosen-results{margin:0;padding:0}.chosen-container-multi .chosen-drop .result-selected{display:list-item;color:#ccc;cursor:default}.chosen-container-active .chosen-single{border:1px solid #5897fb;box-shadow:0 0 5px rgba(0,0,0,.3)}.chosen-container-active.chosen-with-drop .chosen-single{border:1px solid #aaa;-moz-border-radius-bottomright:0;border-bottom-right-radius:0;-moz-border-radius-bottomleft:0;border-bottom-left-radius:0;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#eee),color-stop(80%,#fff));background-image:-webkit-linear-gradient(#eee 20%,#fff 80%);background-image:-moz-linear-gradient(#eee 20%,#fff 80%);background-image:-o-linear-gradient(#eee 20%,#fff 80%);background-image:linear-gradient(#eee 20%,#fff 80%);box-shadow:0 1px 0 #fff inset}.chosen-container-active.chosen-with-drop .chosen-single div{border-left:none;background:0 0}.chosen-container-active.chosen-with-drop .chosen-single div b{background-position:-18px 2px}.chosen-container-active .chosen-choices{border:1px solid #5897fb;box-shadow:0 0 5px rgba(0,0,0,.3)}.chosen-container-active .chosen-choices li.search-field input[type=text]{color:#111!important}.chosen-disabled{opacity:.5!important;cursor:default}.chosen-disabled .chosen-choices .search-choice .search-choice-close,.chosen-disabled .chosen-single{cursor:default}.chosen-rtl{text-align:right}.chosen-rtl .chosen-single{overflow:visible;padding:0 8px 0 0}.chosen-rtl .chosen-single span{margin-right:0;margin-left:26px;direction:rtl}.chosen-rtl .chosen-single-with-deselect span{margin-left:38px}.chosen-rtl .chosen-single div{right:auto;left:3px}.chosen-rtl .chosen-single abbr{right:auto;left:26px}.chosen-rtl .chosen-choices li{float:right}.chosen-rtl .chosen-choices li.search-field input[type=text]{direction:rtl}.chosen-rtl .chosen-choices li.search-choice{margin:3px 5px 3px 0;padding:3px 5px 3px 19px}.chosen-rtl .chosen-choices li.search-choice .search-choice-close{right:auto;left:4px}.chosen-rtl .chosen-drop,.chosen-rtl.chosen-container-single-nosearch .chosen-search{left:9999px}.chosen-rtl.chosen-container-single .chosen-results{margin:0 0 4px 4px;padding:0 4px 0 0}.chosen-rtl .chosen-results li.group-option{padding-right:15px;padding-left:0}.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div{border-right:none}.chosen-rtl .chosen-search input[type=text]{padding:4px 5px 4px 20px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat #fff;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat,-webkit-gradient(linear,50% 0,50% 100%,color-stop(1%,#eee),color-stop(15%,#fff));background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat,-webkit-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat,-moz-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat,-o-linear-gradient(#eee 1%,#fff 15%);background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite.png) -30px -20px no-repeat,linear-gradient(#eee 1%,#fff 15%);direction:rtl}.chosen-rtl.chosen-container-single .chosen-single div b{background-position:6px 2px}.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b{background-position:-12px 2px}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:144dpi){.chosen-container .chosen-results-scroll-down span,.chosen-container .chosen-results-scroll-up span,.chosen-container-multi .chosen-choices .search-choice .search-choice-close,.chosen-container-single .chosen-search input[type=text],.chosen-container-single .chosen-single abbr,.chosen-container-single .chosen-single div b,.chosen-rtl .chosen-search input[type=text]{background-image:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/jqTransform/chosen-sprite@2x.png)!important;background-size:52px 37px!important;background-repeat:no-repeat!important}}
+/*! fancyBox v2.0.6 fancyapps.com | fancyapps.com/fancybox/#license */.fancybox-tmp iframe,.fancybox-tmp object{vertical-align:top;padding:0;margin:0}.fancybox-wrap{position:absolute;top:0;left:0;z-index:8020}.fancybox-skin{position:relative;padding:0;margin:0;background:#f9f9f9;color:#444;text-shadow:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.fancybox-opened{z-index:8030}.fancybox-opened .fancybox-skin{-webkit-box-shadow:0 10px 25px rgba(0,0,0,.5);-moz-box-shadow:0 10px 25px rgba(0,0,0,.5);box-shadow:0 10px 25px rgba(0,0,0,.5)}.fancybox-inner,.fancybox-outer{padding:0;margin:0;position:relative;outline:0}.fancybox-inner{overflow:hidden}.fancybox-type-iframe .fancybox-inner{-webkit-overflow-scrolling:touch}.ajax-index-options .product-view .product-shop{width:800px}.fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:10px}.ajax-index-options .add-to-cart button.button{float:left;margin-left:5px}.fancybox-iframe,.fancybox-image{display:block;width:100%;height:100%;border:0;padding:0;margin:0;vertical-align:top}.fancybox-image{max-width:100%;max-height:100%}#fancybox-loading{background-image:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/fancybox_sprite.png)}.fancybox-close:hover{background-position:0 -19px}.fancybox-close{background-image:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/fancybox-close.gif)}.fancybox-next span,.fancybox-prev span{background-image:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/fancybox_pag.png)}#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:8020}.fancybox-close,.fancybox-nav,.fancybox-nav span{cursor:pointer;z-index:8040;position:absolute}#fancybox-loading div{width:44px;height:44px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/fancybox_loading.gif) center center no-repeat}.fancybox-close{top:40px;right:40px;width:19px;height:19px}.fancybox-nav{top:390px;width:20px;height:20px;background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/blank.gif);-webkit-tap-highlight-color:transparent}.fancybox-prev{left:-106px}.fancybox-next{right:-106px}.fancybox-nav span{top:50%;width:36px;height:60px;margin-top:-170px}.fancybox-prev span{left:20px;background-position:0 -60px}.fancybox-next span{right:20px;background-position:right -60px}.fancybox-prev:hover span{left:20px;background-position:0 0}.fancybox-next:hover span{right:20px;background-position:right 0}.fancybox-nav:hover span{visibility:visible}.fancybox-tmp{position:absolute;top:-9999px;left:-9999px;padding:0;overflow:visible;visibility:hidden}#fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:8010;background:#000}#fancybox-overlay.overlay-fixed{position:fixed;bottom:0;right:0}.fancybox-title{visibility:hidden;font:400 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;text-shadow:none;z-index:8050}.fancybox-opened .fancybox-title{visibility:visible}.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:8030;text-align:center}.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:0 0;background:rgba(0,0,0,.8);-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;text-shadow:0 1px 2px #222;color:#FFF;font-weight:700;line-height:24px;white-space:nowrap}.fancybox-title-outside-wrap{position:relative;margin-top:10px;color:#fff}.fancybox-title-inside-wrap{margin-top:10px}.fancybox-title-over-wrap{position:absolute;bottom:0;left:0;color:#fff;padding:10px;background:#000;background:rgba(0,0,0,.8)}
+.amfpc-block-info{position:relative;border:1px dotted teal;margin:6px 2px;padding:18px 2px 2px;zoom:1}.amfpc-block-info:hover{border-color:orange!important}.amfpc-block-info>.amfpc-block-handle,.amfpc-block-info>.amfpc-template-info{position:absolute;top:0;padding:2px 5px;background:teal;color:#fff;font:400 11px Arial;text-align:left!important;z-index:998;text-transform:none}.amfpc-block-info>.amfpc-block-handle:hover,.amfpc-block-info>.amfpc-template-info:hover{z-index:999}.amfpc-block-info>.amfpc-block-handle{cursor:default;left:0;white-space:nowrap}.amfpc-block-info>.amfpc-template-info{right:0}.amfpc-block-info>.amfpc-block-handle:hover{background-color:orange!important}.amfpc-block-info.active{-webkit-animation:amfpc-blocks 1s linear .5s infinite alternate;animation:amfpc-blocks 1s linear .5s infinite alternate}@-webkit-keyframes amfpc-blocks{from{opacity:1}to{opacity:.1}}@keyframes amfpc-blocks{from{opacity:1}to{opacity:.1}}.amfpc-block-info.updated{border-color:red}.amfpc-block-info.updated>.amfpc-block-handle{top:0;background:red}.amfpc-info{width:350px;min-height:95px;position:fixed;bottom:10px;left:10px;background:teal;color:#fff;z-index:99999;font-size:32px}.amfpc-info h1{background:rgba(255,255,255,.1);color:#fff;padding:2px 5px;font-size:14px;font-weight:700}.amfpc-info h2{margin-top:12px;text-align:center;font-size:30px;font-weight:400;color:rgba(255,255,255,.7)}.help-box .content{padding:2px 5px 10px}.amfpc-info .content{line-height:48px}
+#sidebar-nav{margin-bottom:15px}#sidebar-nav .block-title{border:0!important;height:18px!important;background:url(https://ipanemausa.com/shop/skin/frontend/default/default/images/bkg_block-sidebarnav-title.gif) no-repeat;padding:4px 9px 2px}#sidebar-nav .block-title strong{font:700 13px/16px Arial,Helvetica,sans-serif;text-transform:uppercase;color:#FFF}#sidebar-nav .block-content{background:url(https://ipanemausa.com/shop/skin/frontend/default/default/images/bkg_block-sidebarnav-actions.gif) repeat-x #DEE5E8;padding:6px 9px;border:1px solid #C4C1BC;overflow:auto}#sidebar-nav .block-content a{color:#0D004C}ul#sidebar-nav-menu>li{background:url(https://ipanemausa.com/shop/skin/frontend/default/default/images/bkg_block-sidebarnav-layered-dd.gif) 0 100% repeat-x;list-style:disc inside;font-weight:700;padding:8px 0}ul#sidebar-nav-menu>li:last-child{background:0 0;margin-bottom:5px}ul#sidebar-nav-menu li ul{font-weight:400}#sidebar-nav li.active,#sidebar-nav li.active>.collapsible-wrapper>a,#sidebar-nav li.active>a{color:#D15E00}#sidebar-nav ul.ul-thumb{padding-left:0}ul#sidebar-nav-menu>li.parent>ul.ul-thumb{padding-left:10px}#sidebar-nav li.thumb{list-style-type:none}ul#sidebar-nav-menu>li.no-thumb,ul#sidebar-nav-menu>li.thumb{margin-left:0!important;list-style-type:none}#sidebar-nav img{border:0!important;outline:0!important}#sidebar-nav span.product-count{color:#000}
+#sidebar-nav li.thumb img{float:left;margin-right:3px}#sidebar-nav-menu .arrow{float:left;background:url(https://ipanemausa.com/shop/skin/frontend/default/default/images/arrows.gif) left center no-repeat;display:block;margin:3px 3px 0}ul#sidebar-nav-menu li ul{display:none}#sidebar-nav li.active>ul{display:block}#sidebar-nav li.active>.arrow{display:block;background:url(https://ipanemausa.com/shop/skin/frontend/default/default/images/arrows.gif) right center no-repeat}ul#sidebar-nav-menu>li{list-style:none!important}
+.cloud-zoom-lens{border:4px solid #888;margin:-4px;background-color:#fff;cursor:move}.cloud-zoom-title{font-family:Arial,Helvetica,sans-serif;position:absolute!important;background-color:#000;color:#fff;padding:3px;width:100%;text-align:center;font-weight:700;font-size:10px;top:0}.cloud-zoom-big{border:4px solid #ccc;overflow:hidden}.cloud-zoom-loading{color:#fff;background:#222;padding:3px;border:1px solid #000}.product-image .mousetrap{z-index:100!important}
+.form-list li.widecomment textarea{width:315px}.form-list .fieldmap label{float:none}.fieldmap{float:right;width:750px}.bloco-mapa{width:750px;height:365px;float:left;position:absolute}
+.block-cart-top{background-image:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/images/layout/shopping-bag-top.png);background-position:0 0;background-repeat:no-repeat;float:right;width:65px}.popup-cart-title{display:none}.popup-cart-itens{font:700 20px/32px yanone-regular,Arial,sans-serif;color:#c0004e;display:block;width:35px;float:right;text-align:center;padding-right:4px}
+.product-view .tabs{margin:0 0 -1px;overflow:hidden;zoom:1}.product-view .tabs li{float:left;font-size:12px;line-height:1em;background:#ededed;margin-right:5px;border-radius:2px 2px 0 0}.product-view .tabs li a{border:1px solid #ededed;border-bottom:0;font-family:HelvelticaNeue;letter-spacing:0}.product-view .tabs li.first{border-left:0}.product-view .tabs li.last{border-right:0}.product-view .tabs a{display:block;padding:12px 10px;color:#767676;text-decoration:none;font-size:12px;font-weight:700}.product-view .tabs li a:hover,.product-view .tabs li.active a{background:#fbfbfb;padding:12px 10px;font-weight:700;color:#000;font-size:12px;border-bottom:0}#product_tabs_tags_tabbed_contents.input-box input{width:300px}#product_tabs_tags_tabbed_contents .input-box{margin-bottom:20px}#product_tabs_related_tabbed_contents li{float:left;margin-right:10px}#product_tabs_related_tabbed_contents ol{clear:both}.product-collateral:after{content:".";display:block;clear:both;font-size:0;line-height:0;height:0;overflow:hidden;zoom:1}#product_tabs_description_tabbed_contents{padding:20px;border:1px solid #ededed;border-radius:0 0 2px 2px;background:#fbfbfb}#product_tabs_description_tabbed_contents h2{display:none}#product_tabs_description_tabbed_contents .std{color:#000;font-size:14px;line-height:18px;font-family:HelvelticaNeue,Arial,sans-serif}#product_tabs_additional_tabbed_contents,#product_tabs_cms_contents,#product_tabs_review_tabbed_contents,#product_tabs_upsell_products_tabbed_contents{padding:20px;border:1px solid #ededed;border-radius:0 0 2px 2px;background:#fbfbfb}#product_tabs_tags_tabbed_contents{padding:10px 20px 20px;border:1px solid #ededed;border-radius:0 0 2px 2px;background:#fbfbfb}.tabs-custom span{font-weight:700;display:block;color:#7d7d7d;padding-bottom:10px}.tabs-custom{color:#7d7d7d}#product_tabs_review_tabbed_contents #customer-reviews ol{margin-top:0!important}#product_tabs_review_tabbed_contents #customer-reviews .ratings-list{padding:0;display:block;margin-top:10px}#product_tabs_review_tabbed_contents #customer-reviews .ratings-list tr{display:block;overflow:hidden;height:30px}#product_tabs_review_tabbed_contents #customer-reviews .ratings-list td{min-width:50px;display:inline-block}#product_tabs_review_tabbed_contents #product-review-table{margin-bottom:28px}#product_tabs_review_tabbed_contents .form-add h2{font-size:12px;font-weight:700;color:#7d7d7d;text-transform:none}#product_tabs_review_tabbed_contents #review-form h3,#product_tabs_review_tabbed_contents #review-form h4{font-size:12px;font-weight:400;color:#7d7d7d}#product-review-table tr.first.last th{border:none;text-align:center;padding-right:0}#product-review-table tr th{border-left:none;padding-left:0}#product-review-table td.value{text-align:center;padding-left:30px;padding-right:30px}#product-review-table tr.even{background:0 0}#product_tabs_review_tabbed_contents .form-list label{color:#7d7d7d}#product_tabs_review_tabbed_contents input.input-text{width:322px}#product_tabs_review_tabbed_contents .form-list textarea{width:322px!important;min-width:322px!important;max-width:322px!important;height:150px!important}#product_tabs_review_tabbed_contents .buttons-set{padding-left:0}#product_tabs_review_tabbed_contents .buttons-set button.button{float:left}
+.widget-catalogsale-products-carousel .new-slider{border:1px solid #ddd;position:relative;width:1000px;padding:20px 30px;margin:10px auto}.widget-catalogsale-products-carousel .box-top{overflow:hidden;position:relative;left:0;float:left;width:986px;height:220px;margin-left:5px}.widget-catalogsale-products-carousel .box-top ul{list-style:none;padding:0}.widget-catalogsale-products-carousel .box-top ul li{display:block;float:left;position:relative;width:220px;margin-right:25px;text-align:center;overflow:hidden}#right,.widget-catalogsale-products-carousel #left{cursor:pointer}.widget-catalogsale-products-carousel .box-left,.widget-catalogsale-products-carousel .box-right{position:absolute;top:84px;width:21px;height:35px;cursor:pointer}.widget-catalogsale-products-carousel .box-left{left:0;background:#000}.widget-catalogsale-products-carousel .box-right{right:0;background:#000}
+
+#basic-modal-content{display:none}#simplemodal-overlay{background-color:#000;cursor:wait}#simplemodal-container{height:419px;width:894px;color:#000;background-color:#fff;border:4px solid #444;padding:12px}#simplemodal-container .simplemodal-data{padding:8px}#simplemodal-container code{background:#141414;border-left:3px solid #65B43D;color:#bbb;display:block;font-size:12px;margin-bottom:12px;padding:4px 6px 6px}#simplemodal-container a{color:#ddd}#simplemodal-container a.modalCloseImg{background:url(https://ipanemausa.com/shop/skin/frontend/default/ipanema/css/modal/img/basic/x.png) no-repeat;width:25px;height:29px;display:inline;z-index:3200;position:absolute;top:-15px;right:-16px;cursor:pointer}#simplemodal-container h3{color:#84b8d9}
+.grouped-selector{border-top:1px solid #E6E6E6;border-bottom:1px solid #E6E6E6}.grouped-selector h2{margin:5px 0 0;text-transform:none;font-size:13px}.grouped-selection{display:inline-block;width:75px;cursor:pointer;margin:15px 15px 15px 0;border-style:solid;border-width:1px;border-color:#FEFEFE}.grouped-selection.selected{border-style:solid;border-width:1px;border-color:#000}.col100 .product-essential{min-height:506px;height:auto}html>body .col100 .product-essential{height:auto}
